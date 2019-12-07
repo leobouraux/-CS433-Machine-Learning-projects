@@ -73,5 +73,3 @@ def get_prediction_with_overlay(filename, image_idx, model):
     oimg = make_img_overlay(img, img_prediction)
 
     return oimg
-
-
