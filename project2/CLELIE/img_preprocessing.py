@@ -52,24 +52,17 @@ def img_crop(im, w, h):
     list_patches = []
     imgwidth = im.shape[0]
     imgheight = im.shape[1]
-    is_2d = len(im.shape) < 3
     for i in range(0,imgheight,h):
-        for j in range(0,imgwidth,w):
-            if is_2d:
-                im_patch = im[j:j+w, i:i+h]
-            else:
-                im_patch = im[j:j+w, i:i+h, :]
+        for j in range(0,imgwidth,w):    
+            im_patch = im[j:j+w, i:i+h, :]
             list_patches.append(im_patch)
     return list_patches
 
 
 # Extract label images
-def extract_labels(gt_imgs, training_size):
+def extract_labels(gt_imgs):
     """Extract the labels into a 1-hot matrix [image index, label index]."""            
-    imgs = gt_imgs[:training_size, :, :, :]
-
-    num_images = len(imgs)
-    gt_patches = [img_crop(gt_imgs[i], IMG_PATCH_SIZE, IMG_PATCH_SIZE) for i in range(num_images)]
+    gt_patches = [img_crop(gt_imgs[i], IMG_PATCH_SIZE, IMG_PATCH_SIZE) for i in range(gt_imgs.shape[0])]
     data = np.asarray([gt_patches[i][j] for i in range(len(gt_patches)) for j in range(len(gt_patches[i]))])
     labels = np.asarray([value_to_class(np.mean(data[i])) for i in range(len(data))])
 
@@ -88,15 +81,13 @@ def create_patches(im):
     return list_patches
 
 
-def extract_data(tr_imgs, training_size):
+def extract_data(tr_imgs):
     """Extract the images into a 4D tensor [image index, y, x, channels].
     Values are rescaled from [0, 255] down to [-0.5, 0.5].
     """#todo
-    
-    imgs = tr_imgs[:training_size, :, :, :]
-    
+        
     #list of images (=list windows (=list pixels))
-    img_patches = [create_patches(imgs[i]) for i in range(training_size)]
+    img_patches = [create_patches(tr_imgs[i]) for i in range(tr_imgs.shape[0])]
     
     # j in range number of patch per image
     data = [img_patches[i][j] for i in range(len(img_patches)) for j in range(len(img_patches[i]))]

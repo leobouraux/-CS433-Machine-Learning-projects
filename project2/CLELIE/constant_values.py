@@ -1,4 +1,4 @@
-TRAINING_SIZE   = 2400
+TRAINING_SIZE   = 10
 SEED            = 1    # Set to None for random seed.
 BATCH_SIZE      = 16  
 NUM_EPOCHS      = 100
@@ -8,7 +8,6 @@ IMG_PATCH_SIZE  = 16   # IMG_PATCH_SIZE should be a multiple of 4, image size sh
 NUM_CHANNELS    = 3  # RGB images
 PIXEL_DEPTH     = 255
 NUM_LABELS      = 2
-TRAINING_SIZE   = 50
 VALIDATION_SIZE = 5  # Size of the validation set.
 NUM_EPOCHS      = 100
 RESTORE_MODEL   = False  # If True, restore existing model instead of training a new one
