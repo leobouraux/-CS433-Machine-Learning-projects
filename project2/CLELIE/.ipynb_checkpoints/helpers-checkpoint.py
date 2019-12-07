@@ -1,25 +1,56 @@
+import numpy as np
 import os
 import matplotlib.image as mpimg
-import numpy as np
-from constant_values import *
+from im_processing import *
+from im_postprocess import *
+
+NUM_CHANNELS    = 3  # RGB images
+PIXEL_DEPTH     = 255
+NUM_LABELS      = 2
+TRAINING_SIZE   = 20
+VALIDATION_SIZE = 5  # Size of the validation set.
+SEED            = 66478  # Set to None for random seed.
+BATCH_SIZE      = 16  # 64
+NUM_EPOCHS      = 100
+RESTORE_MODEL   = False  # If True, restore existing model instead of training a new one
+RECORDING_STEP  = 0
+FG_THRESH       = 0.25 # percentage of pixels > 1 required to assign a foreground label to a patch
+IMG_PATCH_SIZE  = 16 # IMG_PATCH_SIZE should be a multiple of 4, image size should be an integer multiple of this number
 
 def load_images(nb_images):
     # Loaded a set of images
-    root_dir = "../Datasets/training/"
+    root_dir = "training/"
 
     image_dir = root_dir + "images/"
     files = os.listdir(image_dir)
 
-    n = min(nb_images, len(files))
-    imgs = [mpimg.imread(image_dir + files[i]) for i in range(n)]
+    n = min(nb_images, len(files)) # Load maximum 20 images
+    print("Loading " + str(n) + " images")
+    imgs = [load_image(image_dir + files[i]) for i in range(n)]
+    print(files[0])
 
     gt_dir = root_dir + "groundtruth/"
-    gt_imgs = [mpimg.imread(gt_dir + files[i]) for i in range(n)]
+    print("Loading " + str(n) + " images")
+    gt_imgs = [load_image(gt_dir + files[i]) for i in range(n)]
+    print(files[0])
     
-#def load_image(infilename):
-#    data = mpimg.imread(infilename)
-#    return data
+def extract_patches(patch_size):
+    img_patches = [img_crop(imgs[i], patch_size, patch_size) for i in range(n)]
+    gt_patches = [img_crop(gt_imgs[i], patch_size, patch_size) for i in range(n)]
 
+    # Linearize list of patches
+    img_patches = np.asarray([img_patches[i][j] for i in range(len(img_patches)) for j in range(len(img_patches[i]))])
+    gt_patches =  np.asarray([gt_patches[i][j] for i in range(len(gt_patches)) for j in range(len(gt_patches[i]))])
+    
+def value_to_class(v):
+    foreground_threshold = 0.25
+    df = np.sum(v)
+    if df > foreground_threshold:
+        return [0, 1]
+    else:
+        return [1, 0]
+    
+    
 def extract_data(filename, num_images):
     """Extract the images into a 4D tensor [image index, y, x, channels].
     Values are rescaled from [0, 255] down to [-0.5, 0.5].
@@ -66,25 +97,3 @@ def extract_labels(filename, num_images):
     
     # Convert to dense 1-hot representation.
     return labels.astype(np.float32)
-
-def img_crop(im, w, h):
-    list_patches = []
-    imgwidth = im.shape[0]
-    imgheight = im.shape[1]
-    is_2d = len(im.shape) < 3
-    for i in range(0,imgheight,h):
-        for j in range(0,imgwidth,w):
-            if is_2d:
-                im_patch = im[j:j+w, i:i+h]
-            else:
-                im_patch = im[j:j+w, i:i+h, :]
-            list_patches.append(im_patch)
-    return list_patches
-
-def value_to_class(v):
-    foreground_threshold = 0.25
-    df = np.sum(v)
-    if df > foreground_threshold:
-        return [0, 1]
-    else:
-        return [1, 0]
