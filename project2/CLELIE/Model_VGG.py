@@ -1,7 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Flatten, MaxPooling2D, ZeroPadding2D, Dropout, LeakyReLU
 
-def model_vgg_like(input_shape):
+def model_VGG(input_shape):
     alpha = 0.0001
     
     model = Sequential()

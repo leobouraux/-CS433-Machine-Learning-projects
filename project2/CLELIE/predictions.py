@@ -67,9 +67,7 @@ def make_img_overlay(img, predicted_img):
 # Get prediction for given input image
 def get_prediction(img, model):
     data = np.asarray(img_crop(img, IMG_PATCH_SIZE, IMG_PATCH_SIZE))
-    print('avant')
     output_prediction = model.predict(data, verbose=1)
-    print('apres')
     img_prediction = label_to_img(img.shape[0], img.shape[1], IMG_PATCH_SIZE, IMG_PATCH_SIZE, output_prediction)
     return img_prediction
 
