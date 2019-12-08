@@ -3,7 +3,7 @@ import sys
 import random
 import matplotlib.image as mpimg
 import numpy as np
-from keras.preprocessing.image import ImageDataGenerator, img_to_array
+from keras.preprocessing.image import ImageDataGenerator, img_to_array, array_to_img
 
 
 from constant_values import *
