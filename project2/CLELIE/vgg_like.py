@@ -30,6 +30,6 @@ def model_vgg_like(input_shape):
     model.add(Dense(128))
     model.add(Dropout(0.5))
     model.add(LeakyReLU(alpha=alpha))
-    model.add(Dense(1, activation='sigmoid'))
+    model.add(Dense(2, activation='sigmoid'))
     
     return model

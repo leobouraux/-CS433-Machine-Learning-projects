@@ -4,7 +4,7 @@ import random
 import matplotlib.image as mpimg
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator, img_to_array, array_to_img
-
+import matplotlib.pyplot as plt
 
 from constant_values import *
 
@@ -35,7 +35,13 @@ def data_augmentation(directory_name, seed):
     imgs1 = np.asarray(imgs)
     np.random.seed(seed)
     rand = np.random.randint(imgs1.shape[0], size=imgs1.shape[0])
-    return imgs1[rand, :, :, :]
+    imgs2 = imgs1[rand, :, :, :]
+    
+    # shows images
+    #IMG = array_to_img(imgs2[0,:,:,:])
+    #imgplot = plt.imshow(IMG)
+    #plt.show()
+    return imgs2
 
 #Assign a label to a patch v
 def value_to_class(v):
