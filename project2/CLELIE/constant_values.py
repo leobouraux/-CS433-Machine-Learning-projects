@@ -1,4 +1,4 @@
-TRAINING_SIZE   = 10
+TRAINING_SIZE   = 1000
 SEED            = 1    # Set to None for random seed.
 BATCH_SIZE      = 16  
 NUM_EPOCHS      = 100

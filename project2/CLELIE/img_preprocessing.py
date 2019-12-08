@@ -7,9 +7,8 @@ from keras.preprocessing.image import ImageDataGenerator, img_to_array
 
 
 from constant_values import *
-    
-def data_augmentation(directory_name): 
-    seed = np.random.randint(0, 10000)
+
+def data_augmentation(directory_name, seed): 
     datagen = ImageDataGenerator()
     filenames = os.listdir(directory_name)
     
@@ -22,14 +21,14 @@ def data_augmentation(directory_name):
     imgs = []
     
     for i, fileNb in enumerate(filenames):
-        img=mpimg.imread(directory_name+fileNb)
+        full_name = directory_name+fileNb
+        img=mpimg.imread(full_name)
         imgr = img_to_array(img)
         for j, angle in enumerate(angls):
             zoom = zooms[j]
             img2 = datagen.apply_transform(x=imgr, transform_parameters={'theta':angle, 'zx':zoom, 'zy':zoom})
             imgs.append(img2)
-
-        sys.stdout.write("\rImage {}/{} is being processed".format(i+1,len(filenames)))
+        sys.stdout.write("\rImage {}/{} is being loaded".format(i+1,len(filenames)))
         sys.stdout.flush()
         
     print(' ... Shuffle data ...')
@@ -37,7 +36,6 @@ def data_augmentation(directory_name):
     np.random.seed(seed)
     rand = np.random.randint(imgs1.shape[0], size=imgs1.shape[0])
     return imgs1[rand, :, :, :]
-
 
 #Assign a label to a patch v
 def value_to_class(v):
