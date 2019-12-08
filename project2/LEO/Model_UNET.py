@@ -4,7 +4,7 @@ from keras.optimizers import *
 from keras import backend as keras
 
 
-def model_UNET(input_size = (16, 16 ,3)):
+def model_UNET(input_size = (400,400,3)):
     inputs = Input(input_size)
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(inputs)
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv1)
