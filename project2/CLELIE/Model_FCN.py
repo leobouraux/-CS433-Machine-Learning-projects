@@ -1,7 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Conv2DTranspose, Conv2D, Flatten, MaxPooling2D, LeakyReLU, Dropout, Activation, GlobalAveragePooling2D
 
-def model_FCN(input_shape):
+def model_FCN(input_shape=(16, 16, 3)):
     alpha = 0.01
     model = Sequential()
     model.add(Conv2D(32, 2, input_shape=input_shape))

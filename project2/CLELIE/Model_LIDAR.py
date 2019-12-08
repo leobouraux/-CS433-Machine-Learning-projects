@@ -1,7 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Flatten, MaxPooling2D, ZeroPadding2D, Convolution2D, Dropout
 
-def model_LIDAR(input_shape):
+def model_LIDAR(input_shape=(16, 16, 3)):
     K_size = (3,3) # specifying the height and width of the 2D convolution window
     #input_shape = (16,16,3)
     mod = Sequential()
