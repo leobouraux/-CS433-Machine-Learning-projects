@@ -6,6 +6,7 @@ from PIL import Image
 
 from constant_values import *
 from img_preprocessing import img_crop
+from im_postprocess import *
 
 
 def error_rate(predictions, labels):
@@ -51,25 +52,43 @@ def get_prediction(img, model):
     img_prediction = label_to_img(img.shape[0], img.shape[1], IMG_PATCH_SIZE, IMG_PATCH_SIZE, output_prediction)
     return img_prediction
 
-# Get a concatenation of the prediction and groundtruth for given input file
-def get_prediction_with_groundtruth(filename, image_idx, model):
-    imageid = "satImage_%.3d" % image_idx
-    image_filename = filename + imageid + ".png"
-    img = mpimg.imread(image_filename)
+# Concatenate an image and its groundtruth
+def concatenate_images(img, gt_img):
+    nChannels = len(gt_img.shape)
+    w = gt_img.shape[0]
+    h = gt_img.shape[1]
+    if nChannels == 3:
+        cimg = np.concatenate((img, gt_img), axis=1)
+    else:
+        gt_img_3c = np.zeros((w, h, 3), dtype=np.uint8)
+        gt_img8 = img_float_to_uint8(gt_img)          
+        gt_img_3c[:,:,0] = gt_img8
+        gt_img_3c[:,:,1] = gt_img8
+        gt_img_3c[:,:,2] = gt_img8
+        img8 = img_float_to_uint8(img)
+        cimg = np.concatenate((img8, gt_img_3c), axis=1)
+    return cimg
 
-    img_prediction = get_prediction(img, model)
-    cimg = concatenate_images(img, img_prediction)
+# Get a concatenation of the prediction and groundtruth for given input file
+def get_prediction_with_groundtruth(image, model):#(filename, image, model):
+    #imageid = "satImage_%.3d" % image
+    #image_filename = filename + imageid + ".png"
+    #img = mpimg.imread(image_filename)
+    
+    
+    img_prediction = get_prediction(image, model)
+    cimg = concatenate_images(image, img_prediction)
 
     return cimg
 
 # Get prediction overlaid on the original image for given input file
-def get_prediction_with_overlay(filename, image_idx, model):
+def get_prediction_with_overlay(image, model):#(filename, image, model):
 
-    imageid = "satImage_%.3d" % image_idx
-    image_filename = filename + imageid + ".png"
-    img = mpimg.imread(image_filename)
+    #imageid = "satImage_%.3d" % image_idx
+    #image_filename = filename + imageid + ".png"
+    #img = mpimg.imread(image_filename)
 
-    img_prediction = get_prediction(img, model)
-    oimg = make_img_overlay(img, img_prediction)
+    img_prediction = get_prediction(image, model)
+    oimg = make_img_overlay(image, img_prediction)
 
     return oimg

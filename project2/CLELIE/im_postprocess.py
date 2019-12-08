@@ -60,3 +60,4 @@ def get_image_summary_3d(img):
     V = tf.transpose(V, (2, 0, 1))
     V = tf.reshape(V, (-1, img_w, img_h, 1))
     return V
+
