@@ -4,7 +4,7 @@ from keras.optimizers import *
 from keras import backend as keras
 
 
-def model_UNet(input_size = (16,16,3)):
+def model_UNET(input_size = (16,16,3)):
     inputs = Input(input_size)
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(inputs)
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv1)
@@ -44,12 +44,11 @@ def model_UNet(input_size = (16,16,3)):
     conv9 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(merge9)
     conv9 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv9)
     conv9 = Conv2D(2, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv9)
-    conv10 = Conv2D(1, 1, activation = 'sigmoid')(conv9)
+    conv9 = Flatten()(conv9)
+    conv10 = Dense(2, activation = 'sigmoid')(conv9)
 
     model = Model(input = inputs, output = conv10)
-
-    model.compile(optimizer = Adam(lr = 1e-4), loss = 'binary_crossentropy', metrics = ['accuracy'])
-
+    
     return model
 
 
