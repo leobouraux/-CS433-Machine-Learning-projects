@@ -45,6 +45,7 @@ def model_UNET(input_size = (16,16,3)):
     conv9 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv9)
     conv9 = Conv2D(2, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv9)
     conv9 = Flatten()(conv9)
+
     conv10 = Dense(2, activation = 'sigmoid')(conv9)
 
     model = Model(input = inputs, output = conv10)
