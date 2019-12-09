@@ -1,2 +1,5 @@
 #ignore folder
 Data/
+
+#ignore all .h5 files
+*.h5
