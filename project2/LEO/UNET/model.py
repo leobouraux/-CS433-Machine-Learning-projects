@@ -11,9 +11,7 @@ from keras import backend as keras
 
 
 def unet(input_size = (256,256,3), pretrained_weights=None):
-    print('avant')
     inputs = Input(shape=(256,256,3))
-    print('apres')
 
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(inputs)
     conv1 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv1)
@@ -53,7 +51,7 @@ def unet(input_size = (256,256,3), pretrained_weights=None):
     conv9 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(merge9)
     conv9 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv9)
     conv9 = Conv2D(2, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv9)
-    conv10 = Conv2D(1, 1, activation = 'sigmoid')(conv9)
+    conv10 = Conv2D(3, 1, activation = 'sigmoid')(conv9)
 
     model = Model(input = inputs, output = conv10)
 
