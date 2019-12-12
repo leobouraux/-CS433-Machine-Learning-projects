@@ -86,7 +86,7 @@ def testGenerator(test_path,num_image = 30,target_size = (256,256),flag_multi_cl
         yield img
 
 
-def geneTrainNpy(image_path,mask_path,flag_multi_class = False,num_class = 2,image_prefix = "image",mask_prefix = "mask",image_as_gray = False,mask_as_gray = False):
+def geneTrainNpy(image_path,mask_path, flag_multi_class=False, num_class=2, image_prefix="image", mask_prefix="mask", image_as_gray=False, mask_as_gray=False):
     image_name_arr = glob.glob(os.path.join(image_path,"%s*.png"%image_prefix))
     image_arr = []
     mask_arr = []
