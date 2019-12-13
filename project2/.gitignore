@@ -3,3 +3,9 @@ Data/
 
 #ignore all .h5 files
 *.h5
+*.ipynb_checkpoints
+*.json
+
+LEO/data
+LEO/model_saved
+LEO/submissions
