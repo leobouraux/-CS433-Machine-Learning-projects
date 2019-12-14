@@ -9,7 +9,7 @@ from PIL import Image
 def sorted_aphanumeric(data):
     convert = lambda text: int(text) if text.isdigit() else text.lower()
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
-    return sorted(data, key=alphanum_key)
+    return np.asarray(sorted(data, key=alphanum_key))
 
 def data_load(directory_name): 
     filenames = sorted_aphanumeric(os.listdir(directory_name))
@@ -68,7 +68,8 @@ def dataGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict, t
             mask[mask <= 0.5] = 0
         yield (img,mask)
         
-def create_validation_train_directory(path, dir_images, dir_labels, seed):                           
+def create_validation_train_directory(path, dir_images, dir_labels, i, seed):
+    # 0<=i<5 
     origin_dirs = [dir_images, dir_labels]
     for name in origin_dirs:
         filenames = sorted_aphanumeric(os.listdir(path+name))
@@ -77,7 +78,7 @@ def create_validation_train_directory(path, dir_images, dir_labels, seed):
         np.random.seed(seed)
         permut = np.random.permutation(len(filenames))
         index = int(len(permut)*0.2)
-        test_ind = permut[:index]
+        test_ind = permut[i*index:(i+1)*index]
         test_filenames = filenames[test_ind]
         trai_ind = permut[index:]
         trai_filenames = filenames[trai_ind]
