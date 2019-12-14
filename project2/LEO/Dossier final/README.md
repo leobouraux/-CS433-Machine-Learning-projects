@@ -11,20 +11,26 @@ ___
 • David Sollander
 ___
 
-Blabla but du projet
+The aim of this project is to segment satellite images from Google Maps into a binary outputs, where white pixels represent the roads and black pixels represent the background. First, check that you have already installed the external libraries lised below and that their versions match. The datasets are available in the `Data` folder, the python scripts are in the ?? folder. The architecture of the code is presented in this README file.
+
+IMAGE RESULTS
 
 ## Requirements
 
 ### Python version and libraries
-The script have been executed on Python 3, using the libraries listed below. VERIFIER LES VERSIONS
+The script have been executed on Python 3, using the libraries listed below.
 * **keras v2.3.1**: This minimalist open-source library is used to build our neural networks. 
+
 See the documentation on the [keras](https://keras.io/) website.
 * **Tenserflow**: ???
 * **scikit-learn v0.21.2**: This open-source machine learning library supports supervised and unsupervised learning, as well as tools for model fitting, data preprocessing, model selection and evaluation. It has been used to train the logistic regression model. 
+
 See the documentation on the [scikit-learn](https://scikit-learn.org/stable/user_guide.html) website.
 * **scikit-image v0.15.0**: This library offers a collection of algorithms for image processing and has been used ??. 
+
 See the documentation on the [scikit-image](https://scikit-image.org/docs/stable/).
-* **Python Imaging Library (PIL) v6.1.0**: This second library has also been used for image processing. 
+* **Python Imaging Library (PIL) v6.1.0**: This second library has also been used for image processing.
+ 
 You can find a documentation on this [website](https://python.developpez.com/cours/pilhandbook/).
 
 
@@ -82,5 +88,7 @@ Contains useful functions to implement cross validation on the segmentation mode
 * **`build_k_indices`**: Creates the indices for the k folds
 * **`cross_validation_visualization`**: Visualize the result of the cross validation
 
+## Jupyter Notebooks
+Two Jupyter Notebooks are also available on this GitHub. They were used to test the different models. 
 
 
