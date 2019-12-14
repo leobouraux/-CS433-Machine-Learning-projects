@@ -93,3 +93,5 @@ def create_validation_train_directory(path, dir_images, dir_labels, i, seed):
         for trai_f in trai_filenames:
             img = Image.open(path+name+'/'+trai_f)
             img.save(path+new[1]+'/'+trai_f)
+        for n in new:
+            print(len(os.listdir(path+n)))
