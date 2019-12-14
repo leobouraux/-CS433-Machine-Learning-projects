@@ -22,6 +22,7 @@ def f1_m(y_true, y_pred):
 
 # Convolution Blocks
 def convolution_down(prev_layer, nb_channels, acti='relu'):
+    kernel_size = 3
     conv = Conv2D(nb_channels, kernel_size, activation=acti, padding='same', kernel_initializer='he_normal')(prev_layer)
     conv = BatchNormalization()(conv)
     conv = Conv2D(nb_channels, kernel_size, activation=acti, padding='same', kernel_initializer='he_normal')(conv)
@@ -30,6 +31,7 @@ def convolution_down(prev_layer, nb_channels, acti='relu'):
     return conv, pool
     
 def convolution_up(prev_layer, nb_channels, layer_merging, acti='relu'):
+    kernel_size = 3
     up = Conv2D(nb_channels, 2, activation=acti, padding='same', kernel_initializer='he_normal')(UpSampling2D(size=(2,2))(prev_layer))
     merged = concatenate([layer_merging, up], axis=3)
     conv = Conv2D(nb_channels, kernel_size, activation=acti, padding='same', kernel_initializer='he_normal')(merged)
@@ -42,7 +44,7 @@ def convolution_up(prev_layer, nb_channels, layer_merging, acti='relu'):
 def unet256(input_size, lr=0.005, verbose=True):
     inputs = Input(shape=input_size)
     kernel_size = 3
-    
+
     # Creation of the layers
     conv1, pool1 = convolution_down(inputs, 64)
     conv2, pool2 = convolution_down(pool1, 128)
@@ -56,9 +58,9 @@ def unet256(input_size, lr=0.005, verbose=True):
     conv9 = convolution_up(conv8, 64, conv1)
     
     conv10 = Conv2D(2, kernel_size, activation='relu', padding='same', kernel_initializer = 'he_normal')(conv9)
-    conv11 = Conv2D(1, 1, activation = 'sigmoid')(conv9)
+    conv11 = Conv2D(1, 1, activation = 'sigmoid')(conv10)
     
-    model = Model(inputs = inputs, outputs = conv10)
+    model = Model(inputs = inputs, outputs = conv11)
     
     model.compile(optimizer = Adam(lr=lr), loss = 'binary_crossentropy', metrics = ['acc', f1_m])
     
@@ -71,7 +73,6 @@ def unet256(input_size, lr=0.005, verbose=True):
 def unet512(input_size, lr=0.005, verbose=True):
     
     inputs = Input(shape=input_size)
-    kernel_size = 3
     
     # Creation of the layers
     conv1, pool1 = convolution_down(inputs, 64)

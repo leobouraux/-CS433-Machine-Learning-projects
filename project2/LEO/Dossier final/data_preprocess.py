@@ -14,14 +14,20 @@ def sorted_aphanumeric(data):
 def data_load(directory_name): 
     filenames = sorted_aphanumeric(os.listdir(directory_name))
     imgs = []
-    for i, fileNb in enumerate(filenames):
-        if(fileNb[0]!='.'):
-            full_name = directory_name+fileNb
+    i = 0
+    nb_imgs = len(filenames)
+    for j, fileName in enumerate(filenames):
+        if(fileName[0]=='.'):
+            nb_imgs-=1
+        else:
+            full_name = directory_name+fileName
             img=mpimg.imread(full_name)
             imgr = img_to_array(img)
             imgs.append(imgr)
-            sys.stdout.write("\rImage {}/{} is being loaded".format(i+1,len(filenames)))
-            sys.stdout.flush()    
+            sys.stdout.write("\rImage {}/{} is being loaded".format(i+1,nb_imgs))
+            sys.stdout.flush()
+            i+=1
+    print()
     return np.asarray(imgs)
 
 def dataGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict, target_size,

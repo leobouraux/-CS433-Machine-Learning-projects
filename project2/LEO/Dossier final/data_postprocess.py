@@ -9,13 +9,16 @@ from keras.preprocessing.image import img_to_array
 from constants import *
 from data_preprocess import *
 
-def save_model(model, output_filename):
+def save_model(model, save_path, output_filename):
+    save_path+='/'
+    if not os.path.exists(save_path):
+        os.mkdir(save_path)
     model_json = model.to_json()
-    with open(output_filename + ".json", "w") as json_file:
+    with open(save_path+output_filename + ".json", "w") as json_file:
         json_file.write(model_json)
 
     # serialize weights to HDF5
-    model.save_weights(output_filename + ".h5")
+    model.save_weights(save_path+output_filename + ".h5")
     print("Saved model to disk")
 
 def load_model(path):
@@ -26,7 +29,9 @@ def load_model(path):
     model = model_from_json(loaded_model_json)
     return model
 
-def reshape_img_test(path_from, path_to, shape):
+def reshape_img(path_from, path_to, shape):
+    if not os.path.exists(path_to):
+        os.mkdir(path_to)
     filenames = os.listdir(path_from)
     for i, fileNb in enumerate(filenames):
         if(fileNb!='.DS_Store'):        
@@ -56,7 +61,9 @@ def concatenate_images(img, gt_img):
         cimg = np.concatenate((img8, gt_img_3c), axis=1)
     return cimg
 
-def saveResult(from_path, save_path, predictions, concat=True):
+def savePredictedImages(from_path, save_path, predictions, concat=True):
+    #if os.path.exists(save_path):
+    #    shutil.rmtree(save_path)
     if not os.path.exists(save_path):
         os.mkdir(save_path)
     list_im_name = sorted_aphanumeric(os.listdir(from_path))
@@ -68,14 +75,15 @@ def saveResult(from_path, save_path, predictions, concat=True):
             if(len(pred.shape)==3 and pred.shape[2]==1):
                 pred = pred.reshape(pred.shape[0],pred.shape[1])
             cimg = concatenate_images(img, pred)
-            io.imsave(save_path+"/prediction"+name[4:], cimg)
+            io.imsave(save_path+"/prediction"+name[4:], img_as_ubyte(cimg))
         else:
-            io.imsave(save_path+"/prediction"+name[4:], pred)
+            io.imsave(save_path+"/prediction"+name[4:], img_as_ubyte(pred))
             
 def data_load_for_prediction(directory_name, RGB_image=False): 
     filenames = sorted_aphanumeric(os.listdir(directory_name))
     imgs = []
     i=0
+    nb_imgs = len(filenames)
     for fileNb in filenames:
         if(fileNb!='.DS_Store'):  
             full_name = directory_name+fileNb
@@ -86,14 +94,17 @@ def data_load_for_prediction(directory_name, RGB_image=False):
                 imgr = img_to_array(img).reshape(SIDE_FINAL, SIDE_FINAL)
             imgs.append(imgr)
             i+=1
-            sys.stdout.write("\rImage {}/{} is being loaded".format(i,len(filenames)))
+            sys.stdout.write("\rImage {}/{} is being loaded".format(i,nb_imgs))
             sys.stdout.flush()
+        else:
+            nb_imgs-=1
+    print()
 
     return np.asarray(imgs)
 
 def average_image(IMGS_folders):
-    means = IMGS[0]
-    print('Size should be (50, 608, 608):', means.shape) 
+    means = IMGS_folders[0]
+    print('Size should be (50, 608, 608) and currently is:', means.shape) 
     for i in range(1,len(IMGS_folders)):
         for j, img in enumerate(IMGS_folders[i]):
             means[j]+=img
