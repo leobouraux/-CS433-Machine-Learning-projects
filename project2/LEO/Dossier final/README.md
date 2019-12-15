@@ -13,7 +13,7 @@ ___
 
 The aim of this project is to segment satellite images from Google Maps into a binary outputs, where white pixels represent the roads and black pixels represent the background. First, check that you have already installed the external libraries lised below and that their versions match. The datasets are available in the `Data` folder, the python scripts are in the ?? folder. The architecture of the code is presented in this README file. Different methods of segmentations have been coded, and their results are shown on Fig 1.
 
-![alt-text-1](Pictures/test_10.png "Satellite image") ![alt-text-2](Pictures/pred_10.png "U-Net prediction") ![alt-text-3](Picture/patched_10.png "Patched prediction for submission")
+![alt-text-1](Pictures/test_10.png "Satellite image") ![alt-text-2](Pictures/pred_10.png "U-Net prediction") ![alt-text-3](Pictures/patched_10.png "Patched prediction for submission")
 
 
 ## Requirements
