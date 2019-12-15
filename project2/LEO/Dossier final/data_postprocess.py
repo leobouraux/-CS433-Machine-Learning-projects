@@ -110,7 +110,7 @@ def average_image(IMGS_folders):
             means[j]+=img
     return means/len(IMGS_folders)
 
-def color_patch(patch, thresh=TRESHOLD):
+def color_patch(patch, thresh=0.2):
     m = np.mean(patch)
     if(m>thresh):
         return 1, np.ones(16*16).reshape(16,16)
