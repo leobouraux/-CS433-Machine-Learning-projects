@@ -11,18 +11,35 @@ ___
 • David Sollander
 ___
 
-The aim of this project is to segment satellite images from Google Maps into a binary outputs, where white pixels represent the roads and black pixels represent the background. First, check that you have already installed the external libraries lised below and that their versions match. The datasets are available in the `Data` folder, the python scripts are in the ?? folder. The architecture of the code is presented in this README file.
+The aim of this project is to segment satellite images from Google Maps into a binary outputs, where white pixels represent the roads and black pixels represent the background. First, check that you have already installed the external libraries lised below and that their versions match. The datasets are available in the `Data` folder, the python scripts are in the ?? folder. The architecture of the code is presented in this README file. Different methods of segmentations have been coded, and their results are shown on Fig 1.
 
 IMAGE RESULTS
 
 ## Requirements
 
 ### Python version and libraries
-The script have been executed on Python 3, using the libraries listed below.
+The script have been executed on Python 3, using the libraries listed below. To install them, you can follow the following instructions.
+
+`pip install --upgrade pip`
+
+`pip install tensorflow`
+
+`pip install keras`
+
+`pip install sklearn` 
+
+`pip install scikit-image` 
+
+`pip install Pillow`
+
+* **TenserFlow v1.15.0**: This open-source platform for machine learning must be installed to use properly the `keras` library. 
+
+See the documentation on the [TenserFlow](https://www.tensorflow.org/overview) website.
+
 * **keras v2.3.1**: This minimalist open-source library is used to build our neural networks. 
 
 See the documentation on the [keras](https://keras.io/) website.
-* **Tenserflow**: ???
+ 
 * **scikit-learn v0.21.2**: This open-source machine learning library supports supervised and unsupervised learning, as well as tools for model fitting, data preprocessing, model selection and evaluation. It has been used to train the logistic regression model. 
 
 See the documentation on the [scikit-learn](https://scikit-learn.org/stable/user_guide.html) website.
