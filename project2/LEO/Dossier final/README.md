@@ -20,17 +20,17 @@ IMAGE RESULTS
 ### Python version and libraries
 The script have been executed on Python 3, using the libraries listed below. To install them, you can follow the following instructions.
 
-`pip install --upgrade pip 
+`pip install --upgrade pip`
 
-pip install tensorflow 
+`pip install tensorflow`
 
-pip install keras 
+`pip install keras`
 
-pip install sklearn 
+`pip install sklearn` 
 
-pip install scikit-image 
+`pip install scikit-image` 
 
-pip install Pillow`
+`pip install Pillow`
 
 * **TenserFlow v1.15.0**: This open-source platform for machine learning must be installed to use properly the `keras` library. 
 
