@@ -1,3 +1,4 @@
+# data_postprocess
 import os, re, sys, csv
 import skimage.io as io
 import numpy as np
@@ -6,8 +7,6 @@ from skimage import img_as_ubyte
 from keras.models import model_from_json
 from keras.preprocessing.image import img_to_array
 
-from constants import *
-from data_preprocess import *
 
 def save_model(model, save_path, output_filename):
     save_path+='/'
@@ -78,6 +77,7 @@ def savePredictedImages(from_path, save_path, predictions, concat=True):
             io.imsave(save_path+"/prediction"+name[4:], img_as_ubyte(cimg))
         else:
             io.imsave(save_path+"/prediction"+name[4:], img_as_ubyte(pred))
+    print("save pred ok")
             
 def data_load_for_prediction(directory_name, RGB_image=False): 
     filenames = sorted_aphanumeric(os.listdir(directory_name))

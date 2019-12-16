@@ -9,17 +9,16 @@ import os
 import sys
 
 # --- Choose whether train a new model (1) or load a pretrained model
-train_model = 0
+train_model = 1
 
 # --- Indicate the path of the pretrained model (if it exists) and the images to load
-WEIGHT_PATH     =  # A remplir
-DATA_PATH       = 
-DATA_TEST_PATH  = 
-MODEL_PATH      = DATA_PATH+"models/"
+#WEIGHT_PATH     =  # Indicate the path where yout weights are pretrained
+DATA_PATH       = root_path+"data/"
+DATA_TEST_PATH  = root_path+"data/test/"
+MODEL_PATH      = root_path+"models/"
 PRED_PATH       = DATA_PATH+"predictions/"
 
 # --- Cross validation
-
 k_fold = 5
 rotation_angles = [5,90,180]
 for k in range(k_fold):
@@ -33,14 +32,12 @@ for k in range(k_fold):
     for i in rotation_angles:
         # --- Train or load a pretrained model
         if train_model:
-            MODEL_PATH = ????
-            MODEL_NAME = "Model_k%f_rot%f"%k%i
-            fit_model(i, MODEL_PATH, MODEL_NAME)
+            MODEL_NAME = f'Model_k{k}_rot{i}'
+            model = fit_unet(i, MODEL_PATH, MODEL_NAME)
 
         else:
             # Load pretrained weights
             model = unet256(input_size = (SIDE,SIDE,3), verbose=False)
-            WEIGHT_PATH = ????
             model.load_weights(WEIGHT_PATH)
 
         # --- Load the testing set
@@ -59,7 +56,7 @@ for k in range(k_fold):
                 os.mkdir(PRED_PATH)
 
         # Save the predictions
-        PRED_FILE = PRED_PATH + "Model_k%f_rot%f"%k%i
+        PRED_FILE = PRED_PATH + f'Model_k{k}_rot{i}/'
         savePredictedImages(DATA_PATH+"test_resized/", 
                             PRED_FILE, 
                             results, 
@@ -67,7 +64,7 @@ for k in range(k_fold):
 
         # Resize the prediction to their final size (608x608 px)
         reshape_img(PRED_FILE, PRED_FILE, SIDE_FINAL)
-    
+
         # Add the reshaped prediction to the prediction list
         IMGS.append((1,data_load_for_prediction(PRED_FILE)))
         
@@ -77,4 +74,4 @@ means = average_image(IMGS)
 # --- Create submission in a .csv file
 if not os.path.exists(PATH_ROOT+"submissions/"):
         os.mkdir(PATH_ROOT+"submissions/")
-create_csv_submission(patched_imgs, vs, PATH_ROOT+'submissions/Model_UNET_256_k_fold_0_f1_874a.csv')
+create_csv_submission(patched_imgs, vs, PATH_ROOT+'submissions/' + f'Model_k{k}_rot{i}.csv')

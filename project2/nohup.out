@@ -675,3 +675,45 @@
 [W 17:30:32.953 LabApp] Notebook LEO/Dossier final/run_unet2.ipynb is not trusted
 [I 17:30:33.925 LabApp] Kernel started: 0724ef53-01c9-4db7-b488-2322237afa9c
 [I 17:30:34.476 LabApp] Adapting from protocol version 5.1 (kernel 0724ef53-01c9-4db7-b488-2322237afa9c) to 5.3 (client).
+[I 18:36:26.000 LabApp] Starting buffering for 0724ef53-01c9-4db7-b488-2322237afa9c:93f12d48-d707-4e54-bdb8-1f637dbc5d9f
+[I 18:36:26.001 LabApp] Starting buffering for a746d52b-5287-4abd-8cf0-e6b8c728140e:85745ec2-3d8b-4347-96bd-4d196505407c
+[I 18:36:26.001 LabApp] Starting buffering for e7156d53-7743-4669-a81a-07cc13e398e4:c075cea0-4b8f-406d-ad1c-dbc3c006fd40
+[C 19:01:48.966 LabApp] received signal 15, stopping
+[C 19:01:48.966 LabApp] received signal 15, stopping
+[I 19:01:55.269 LabApp] Shutting down 2 kernels
+[I 19:01:55.269 LabApp] Shutting down 3 kernels
+[I 19:01:55.271 LabApp] Kernel shutdown: 5bd9f036-ae87-4428-a92d-739b1076114a
+[I 19:01:55.271 LabApp] Kernel shutdown: a746d52b-5287-4abd-8cf0-e6b8c728140e
+[I 19:01:55.271 LabApp] Kernel shutdown: b11c57c5-252d-43f9-a985-d2629fd14e79
+[I 19:01:55.272 LabApp] Kernel shutdown: e7156d53-7743-4669-a81a-07cc13e398e4
+[I 19:01:55.286 LabApp] Kernel shutdown: 0724ef53-01c9-4db7-b488-2322237afa9c
+[I 23:24:16.826 LabApp] The port 8888 is already in use, trying another port.
+[I 23:24:17.033 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 23:24:17.033 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 23:24:17.042 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 23:24:17.042 LabApp] The Jupyter Notebook is running at:
+[I 23:24:17.042 LabApp] http://localhost:8889/?token=40de7b9a99a0e65e8604dddd18bd79450e8c1ea495ce6910
+[I 23:24:17.042 LabApp]  or http://127.0.0.1:8889/?token=40de7b9a99a0e65e8604dddd18bd79450e8c1ea495ce6910
+[I 23:24:17.042 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 23:24:17.451 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-7863-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=40de7b9a99a0e65e8604dddd18bd79450e8c1ea495ce6910
+     or http://127.0.0.1:8889/?token=40de7b9a99a0e65e8604dddd18bd79450e8c1ea495ce6910
+[W 23:24:22.680 LabApp] Could not determine jupyterlab build status without nodejs
+[W 23:24:25.416 LabApp] 404 GET /api/contents/to_be_sent?1576535065406 (127.0.0.1): No such file or directory: to_be_sent
+[W 23:24:25.416 LabApp] No such file or directory: to_be_sent
+[W 23:24:25.416 LabApp] 404 GET /api/contents/to_be_sent?1576535065406 (127.0.0.1) 1.12ms referer=http://localhost:8889/lab
+[W 23:24:25.417 LabApp] 404 GET /api/contents/to_be_sent/Milestone_2.ipynb?content=0&1576535065407 (127.0.0.1): No such file or directory: to_be_sent/Milestone_2.ipynb
+[W 23:24:25.418 LabApp] No such file or directory: to_be_sent/Milestone_2.ipynb
+[W 23:24:25.418 LabApp] 404 GET /api/contents/to_be_sent/Milestone_2.ipynb?content=0&1576535065407 (127.0.0.1) 1.44ms referer=http://localhost:8889/lab
+[I 23:25:42.490 LabApp] Saving file at /LEO/Dossier final/data_postprocess.py
+[I 23:25:44.530 LabApp] Saving file at /LEO/Dossier final/data_postprocess.py
+[I 23:27:09.373 LabApp] Saving file at /LEO/Dossier final/fit_model.py
+[I 23:28:01.927 LabApp] Saving file at /LEO/Dossier final/data_preprocess.py
+[I 23:28:37.995 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 23:30:02.681 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 23:41:44.028 LabApp] Interrupted...
+[I 23:41:44.029 LabApp] Shutting down 0 kernels
