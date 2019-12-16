@@ -14,6 +14,9 @@ train_model = 0
 WEIGHT_PATH     = "../" # A remplir
 DATA_PATH       = "../../Data/training"
 DATA_TEST_PATH  = "!!"
+MODEL_PATH = ''
+
+MODEL_NAME = "Model_UNET_256_k_fold_4_f1_932_rot_90_it_120x200"
 
 create_validation_train_directory(DATA_ROOT+'train/', 'images', 'groundtruth', 1, 1)
 
@@ -58,7 +61,7 @@ if train_model:
                     callbacks=[cp_callback, csv_logger])
     
     # Save the trained model
-    save_model(model, PATH_ROOT+"model_saved", "Model_UNET_256_k_fold_0_f1_874")
+    save_model(model, MODEL_PATH+"model_saved", MODEL_NAME)
 
 else:
     # Load pretrained weights
