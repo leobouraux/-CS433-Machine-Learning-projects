@@ -102,15 +102,19 @@ def data_load_for_prediction(directory_name, RGB_image=False):
 
     return np.asarray(imgs)
 
-def average_image(IMGS_folders):
-    means = IMGS_folders[0]
+def average_image(IMGS_weighted_folders):
+    total = IMGS_weighted_folders[0][0]
+    means = IMGS_weighted_folders[0][1] * total
     print('Size should be (50, 608, 608) and currently is:', means.shape) 
-    for i in range(1,len(IMGS_folders)):
-        for j, img in enumerate(IMGS_folders[i]):
-            means[j]+=img
-    return means/len(IMGS_folders)
+    for i in range(1,len(IMGS_weighted_folders)):
+        tupl = IMGS_weighted_folders[i]
+        weight = tupl[0]
+        total+=weight
+        for j, img in enumerate(tupl[1]):
+            means[j]+=img*weight
+    return means/total
 
-def color_patch(patch, thresh=0.2):
+def color_patch(patch, thresh=0.25):
     m = np.mean(patch)
     if(m>thresh):
         return 1, np.ones(16*16).reshape(16,16)
