@@ -1,0 +1,674 @@
+[I 13:06:04.884 LabApp] The port 8888 is already in use, trying another port.
+[I 13:06:04.885 LabApp] The port 8889 is already in use, trying another port.
+[I 13:06:05.093 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 13:06:05.093 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 13:06:05.100 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 13:06:05.100 LabApp] The Jupyter Notebook is running at:
+[I 13:06:05.100 LabApp] http://localhost:8890/?token=1d599bd35bf67026f320381b75f1d44075e628a819b4fc5f
+[I 13:06:05.100 LabApp]  or http://127.0.0.1:8890/?token=1d599bd35bf67026f320381b75f1d44075e628a819b4fc5f
+[I 13:06:05.101 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:06:06.159 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-4843-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=1d599bd35bf67026f320381b75f1d44075e628a819b4fc5f
+     or http://127.0.0.1:8890/?token=1d599bd35bf67026f320381b75f1d44075e628a819b4fc5f
+[W 13:06:16.117 LabApp] Could not determine jupyterlab build status without nodejs
+[W 13:06:20.807 LabApp] 404 GET /api/contents/project2/CLELIE?1575806780782 (127.0.0.1): No such file or directory: project2/CLELIE
+[W 13:06:20.807 LabApp] No such file or directory: project2/CLELIE
+[W 13:06:20.807 LabApp] 404 GET /api/contents/project2/CLELIE?1575806780782 (127.0.0.1) 1.32ms referer=http://localhost:8890/lab
+[W 13:06:20.808 LabApp] 404 GET /api/contents/project2/CLELIE/test_models_leo.ipynb?content=0&1575806780784 (127.0.0.1): No such file or directory: project2/CLELIE/test_models_leo.ipynb
+[W 13:06:20.809 LabApp] No such file or directory: project2/CLELIE/test_models_leo.ipynb
+[W 13:06:20.809 LabApp] 404 GET /api/contents/project2/CLELIE/test_models_leo.ipynb?content=0&1575806780784 (127.0.0.1) 1.35ms referer=http://localhost:8890/lab
+[W 13:06:20.815 LabApp] 404 GET /api/contents/project2/CLELIE/vgg_like.py?content=0&1575806780784 (127.0.0.1): No such file or directory: project2/CLELIE/vgg_like.py
+[W 13:06:20.816 LabApp] No such file or directory: project2/CLELIE/vgg_like.py
+[W 13:06:20.816 LabApp] 404 GET /api/contents/project2/CLELIE/vgg_like.py?content=0&1575806780784 (127.0.0.1) 3.16ms referer=http://localhost:8890/lab
+[W 13:06:20.819 LabApp] 404 GET /api/contents/project2/CLELIE/LIDAR_model.py?content=0&1575806780786 (127.0.0.1): No such file or directory: project2/CLELIE/LIDAR_model.py
+[W 13:06:20.819 LabApp] No such file or directory: project2/CLELIE/LIDAR_model.py
+[W 13:06:20.820 LabApp] 404 GET /api/contents/project2/CLELIE/LIDAR_model.py?content=0&1575806780786 (127.0.0.1) 2.99ms referer=http://localhost:8890/lab
+[W 13:06:20.820 LabApp] 404 GET /api/contents/project2/CLELIE/constant_values.py?content=0&1575806780787 (127.0.0.1): No such file or directory: project2/CLELIE/constant_values.py
+[W 13:06:20.820 LabApp] No such file or directory: project2/CLELIE/constant_values.py
+[W 13:06:20.820 LabApp] 404 GET /api/contents/project2/CLELIE/constant_values.py?content=0&1575806780787 (127.0.0.1) 2.61ms referer=http://localhost:8890/lab
+[W 13:06:20.823 LabApp] 404 GET /api/contents/project2/CLELIE/im_postprocess.py?content=0&1575806780789 (127.0.0.1): No such file or directory: project2/CLELIE/im_postprocess.py
+[W 13:06:20.823 LabApp] No such file or directory: project2/CLELIE/im_postprocess.py
+[W 13:06:20.823 LabApp] 404 GET /api/contents/project2/CLELIE/im_postprocess.py?content=0&1575806780789 (127.0.0.1) 2.54ms referer=http://localhost:8890/lab
+[W 13:06:20.824 LabApp] 404 GET /api/contents/project2/CLELIE/img_preprocessing.py?content=0&1575806780790 (127.0.0.1): No such file or directory: project2/CLELIE/img_preprocessing.py
+[W 13:06:20.824 LabApp] No such file or directory: project2/CLELIE/img_preprocessing.py
+[W 13:06:20.824 LabApp] 404 GET /api/contents/project2/CLELIE/img_preprocessing.py?content=0&1575806780790 (127.0.0.1) 3.00ms referer=http://localhost:8890/lab
+[W 13:06:26.727 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 13:06:27.955 LabApp] Kernel started: 4fe08e2a-278a-4015-b8db-5bd75695a786
+[I 13:06:33.281 LabApp] Adapting from protocol version 5.1 (kernel 4fe08e2a-278a-4015-b8db-5bd75695a786) to 5.3 (client).
+[I 13:06:33.302 LabApp] Adapting from protocol version 5.1 (kernel 4fe08e2a-278a-4015-b8db-5bd75695a786) to 5.3 (client).
+2019-12-08 13:06:38.043827: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-08 13:06:38.045703: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 13:08:27.242 LabApp] Saving file at /CLELIE/test_models_leo.ipynb
+[W 13:08:27.265 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 13:09:52.528 LabApp] Starting buffering for 4fe08e2a-278a-4015-b8db-5bd75695a786:83b9efe2-d86d-4121-8444-e6552e49a5d2
+[I 13:09:55.952 LabApp] The port 8888 is already in use, trying another port.
+[I 13:09:55.953 LabApp] The port 8889 is already in use, trying another port.
+[I 13:09:55.953 LabApp] The port 8890 is already in use, trying another port.
+[I 13:09:56.209 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 13:09:56.209 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 13:09:56.215 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 13:09:56.216 LabApp] The Jupyter Notebook is running at:
+[I 13:09:56.216 LabApp] http://localhost:8891/?token=2d08d7253e4f30be772da4fd238d15cc427f83a656ffa07e
+[I 13:09:56.216 LabApp]  or http://127.0.0.1:8891/?token=2d08d7253e4f30be772da4fd238d15cc427f83a656ffa07e
+[I 13:09:56.216 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:09:56.972 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-4984-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8891/?token=2d08d7253e4f30be772da4fd238d15cc427f83a656ffa07e
+     or http://127.0.0.1:8891/?token=2d08d7253e4f30be772da4fd238d15cc427f83a656ffa07e
+[W 13:10:12.154 LabApp] Could not determine jupyterlab build status without nodejs
+[W 13:10:15.660 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 13:10:17.192 LabApp] Kernel started: ba6a70da-2e3b-4e9c-b8ed-0bca98a7f162
+[I 13:10:21.501 LabApp] Adapting from protocol version 5.1 (kernel ba6a70da-2e3b-4e9c-b8ed-0bca98a7f162) to 5.3 (client).
+[I 13:10:21.514 LabApp] Adapting from protocol version 5.1 (kernel ba6a70da-2e3b-4e9c-b8ed-0bca98a7f162) to 5.3 (client).
+2019-12-08 13:11:32.028919: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-08 13:11:32.059638: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 13:12:20.296 LabApp] Saving file at /CLELIE/test_models_leo.ipynb
+[W 13:12:20.328 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 14:44:59.903 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 14:44:59.918 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 14:44:59.920 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 14:44:59.920 LabApp] The Jupyter Notebook is running at:
+[I 14:44:59.920 LabApp] http://localhost:8888/?token=c9c1ac6ef78681604b17a10ffeebea0281447b3efd524d30
+[I 14:44:59.920 LabApp]  or http://127.0.0.1:8888/?token=c9c1ac6ef78681604b17a10ffeebea0281447b3efd524d30
+[I 14:44:59.921 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:45:00.090 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-2162-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=c9c1ac6ef78681604b17a10ffeebea0281447b3efd524d30
+     or http://127.0.0.1:8888/?token=c9c1ac6ef78681604b17a10ffeebea0281447b3efd524d30
+[W 14:45:03.709 LabApp] Could not determine jupyterlab build status without nodejs
+[W 14:45:07.785 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 14:45:08.651 LabApp] Kernel started: b36d7f68-eba8-4432-b99f-628ebb88be25
+[I 14:45:09.781 LabApp] Adapting from protocol version 5.1 (kernel b36d7f68-eba8-4432-b99f-628ebb88be25) to 5.3 (client).
+[I 14:45:09.790 LabApp] Adapting from protocol version 5.1 (kernel b36d7f68-eba8-4432-b99f-628ebb88be25) to 5.3 (client).
+[I 14:54:38.662 LabApp] Creating new file in /CLELIE
+[I 14:55:13.741 LabApp] Saving file at /CLELIE/LIDAR_model.py
+[I 14:56:38.864 LabApp] Saving file at /CLELIE/FCN.py
+[I 14:59:11.086 LabApp] Saving file at /CLELIE/FCN.py
+[I 15:00:26.110 LabApp] Saving file at /CLELIE/FCN.py
+[I 15:01:20.855 LabApp] Saving file at /CLELIE/test_models_leo.ipynb
+[W 15:01:20.856 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 15:03:21.202 LabApp] Saving file at /CLELIE/test_models_leo.ipynb
+[W 15:03:21.203 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 15:04:13.690 LabApp] Creating new file in /CLELIE
+[I 15:06:13.935 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:10:14.687 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:12:14.800 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:14:15.387 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:16:16.469 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:20:16.641 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:22:17.499 LabApp] Saving file at /CLELIE/UNet.py
+[I 15:23:01.498 LabApp] Saving file at /CLELIE/UNet.py
+[W 15:27:35.886 LabApp] 404 GET /api/contents/CLELIE/FCN.py?content=0&1575815255856 (127.0.0.1): No such file or directory: CLELIE/FCN.py
+[W 15:27:35.887 LabApp] No such file or directory: CLELIE/FCN.py
+[W 15:27:35.889 LabApp] 404 GET /api/contents/CLELIE/FCN.py?content=0&1575815255856 (127.0.0.1) 4.82ms referer=http://localhost:8888/lab
+[I 15:27:35.906 LabApp] Uploading file to /CLELIE/FCN.py
+[I 15:27:57.370 LabApp] Saving file at /CLELIE/Model_FCN.py
+[I 15:28:03.734 LabApp] Saving file at /CLELIE/Model_LIDAR.py
+[I 15:28:09.934 LabApp] Saving file at /CLELIE/Model_VGG.py
+[I 15:51:06.928 LabApp] Saving file at /CLELIE/UNet.py
+[I 16:04:02.454 LabApp] Saving file at /CLELIE/UNet.py
+[I 13:44:03.497 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 13:44:03.516 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 13:44:03.523 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 13:44:03.523 LabApp] The Jupyter Notebook is running at:
+[I 13:44:03.523 LabApp] http://localhost:8888/?token=23a4db691e0aba62195e7cb03b1b2711719f1d6d0b7fd39e
+[I 13:44:03.524 LabApp]  or http://127.0.0.1:8888/?token=23a4db691e0aba62195e7cb03b1b2711719f1d6d0b7fd39e
+[I 13:44:03.524 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:44:03.724 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-17307-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=23a4db691e0aba62195e7cb03b1b2711719f1d6d0b7fd39e
+     or http://127.0.0.1:8888/?token=23a4db691e0aba62195e7cb03b1b2711719f1d6d0b7fd39e
+[W 13:44:11.965 LabApp] Could not determine jupyterlab build status without nodejs
+[W 13:44:14.351 LabApp] 404 GET /api/contents/test_models_leo.ipynb?content=0&1575895454337 (127.0.0.1): No such file or directory: test_models_leo.ipynb
+[W 13:44:14.352 LabApp] No such file or directory: test_models_leo.ipynb
+[W 13:44:14.352 LabApp] 404 GET /api/contents/test_models_leo.ipynb?content=0&1575895454337 (127.0.0.1) 1.65ms referer=http://localhost:8888/lab
+[W 13:44:30.643 LabApp] Notebook LEO/TEST_UNET_leo.ipynb is not trusted
+[I 13:44:32.143 LabApp] Kernel started: e39c5f67-2791-4886-86b7-174ea65b63c4
+[I 13:44:33.827 LabApp] Adapting from protocol version 5.1 (kernel e39c5f67-2791-4886-86b7-174ea65b63c4) to 5.3 (client).
+[I 13:44:33.838 LabApp] Adapting from protocol version 5.1 (kernel e39c5f67-2791-4886-86b7-174ea65b63c4) to 5.3 (client).
+[I 13:44:33.858 LabApp] Adapting from protocol version 5.1 (kernel e39c5f67-2791-4886-86b7-174ea65b63c4) to 5.3 (client).
+[I 13:46:31.383 LabApp] Saving file at /LEO/TEST_UNET_leo.ipynb
+[I 14:08:47.449 LabApp] Kernel started: 163a2e95-0b74-4bd2-87c6-cc8e1cf1dee7
+[I 14:08:48.038 LabApp] Adapting from protocol version 5.1 (kernel 163a2e95-0b74-4bd2-87c6-cc8e1cf1dee7) to 5.3 (client).
+[W 14:09:37.570 LabApp] Notebook LEO/Edge detection.ipynb is not trusted
+[I 14:09:37.881 LabApp] Kernel started: 714421a1-6a3f-4d25-9e51-7cba3d343969
+[I 14:09:38.454 LabApp] Adapting from protocol version 5.1 (kernel 714421a1-6a3f-4d25-9e51-7cba3d343969) to 5.3 (client).
+[W 14:09:45.613 LabApp] Notebook LEO/test_unet.ipynb is not trusted
+[I 14:09:46.283 LabApp] Kernel started: 992a6ab5-f57a-4949-8f0e-85d7c237e1c6
+[I 14:09:46.862 LabApp] Adapting from protocol version 5.1 (kernel 992a6ab5-f57a-4949-8f0e-85d7c237e1c6) to 5.3 (client).
+[W 14:10:22.981 LabApp] Notebook LEO/UNET/trainUnet.ipynb is not trusted
+[I 14:10:23.453 LabApp] Kernel started: 2f5e09ee-b25b-4c78-9640-d1d8d8d6fbfa
+[I 14:10:24.056 LabApp] Adapting from protocol version 5.1 (kernel 2f5e09ee-b25b-4c78-9640-d1d8d8d6fbfa) to 5.3 (client).
+[I 14:10:49.357 LabApp] Creating new notebook in /LEO
+[I 14:10:49.969 LabApp] Kernel started: 3d54d9b5-7314-4591-b6ca-82e47812a915
+[I 14:10:50.589 LabApp] Adapting from protocol version 5.1 (kernel 3d54d9b5-7314-4591-b6ca-82e47812a915) to 5.3 (client).
+[W 14:11:43.853 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 14:11:44.506 LabApp] Kernel started: 15ba0521-af7f-4f58-87fd-9961b8d71fb6
+[I 14:11:45.092 LabApp] Adapting from protocol version 5.1 (kernel 15ba0521-af7f-4f58-87fd-9961b8d71fb6) to 5.3 (client).
+[I 14:12:23.352 LabApp] Saving file at /LEO/UNET/trainUnet.ipynb
+2019-12-09 14:12:44.035989: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-09 14:12:44.037936: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 14:12:49.910 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+2019-12-09 14:13:05.794015: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2019-12-09 14:13:05.808428: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2019-12-09 14:13:05.808526: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (clelie-HP-Notebook): /proc/driver/nvidia/version does not exist
+2019-12-09 14:13:05.809279: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-09 14:13:05.976121: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2019-12-09 14:13:05.976936: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5601eac288d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-12-09 14:13:05.977004: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2019-12-09 14:13:06.459467: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 18874368 exceeds 10% of system memory.
+2019-12-09 14:13:06.562786: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 18874368 exceeds 10% of system memory.
+2019-12-09 14:13:06.567573: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 18874368 exceeds 10% of system memory.
+2019-12-09 14:13:06.581544: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 37748736 exceeds 10% of system memory.
+2019-12-09 14:13:06.705505: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 37748736 exceeds 10% of system memory.
+[I 14:13:44.337 LabApp] Saving file at /CLELIE/test_models_leo.ipynb
+[W 14:13:44.337 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 14:14:50.601 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:16:50.850 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:18:51.147 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:20:51.467 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:22:51.724 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:24:51.975 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:26:52.502 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:28:52.796 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:36:55.256 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:40:55.496 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:42:55.830 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:44:56.115 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:46:56.391 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:48:56.619 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:49:56.930 LabApp] Adapting from protocol version 5.1 (kernel e39c5f67-2791-4886-86b7-174ea65b63c4) to 5.3 (client).
+[I 14:50:56.862 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:52:57.142 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:53:16.960 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 14:53:18.834 LabApp] Starting buffering for e39c5f67-2791-4886-86b7-174ea65b63c4:2e94e2dd-697b-4e68-954d-7b6790e41f55
+[I 14:53:18.834 LabApp] Starting buffering for 3d54d9b5-7314-4591-b6ca-82e47812a915:112be6f2-d5bc-4c70-a2d9-f190a152c471
+[I 14:53:18.835 LabApp] Starting buffering for 2f5e09ee-b25b-4c78-9640-d1d8d8d6fbfa:91f6cf6c-3fe1-4468-a94a-e94655ec040f
+[I 14:53:18.836 LabApp] Starting buffering for 15ba0521-af7f-4f58-87fd-9961b8d71fb6:2592b87b-32bc-42ef-9d64-07b17a9cdd9c
+[I 14:53:18.837 LabApp] Starting buffering for 714421a1-6a3f-4d25-9e51-7cba3d343969:5e5f8a94-547c-4c13-9ca8-31e5bfa8334f
+[I 14:53:18.839 LabApp] Starting buffering for 992a6ab5-f57a-4949-8f0e-85d7c237e1c6:51610c10-2427-4c8a-bcac-c506047ffbff
+[I 14:53:18.839 LabApp] Starting buffering for 163a2e95-0b74-4bd2-87c6-cc8e1cf1dee7:ab5aed4e-a54f-48cd-8bf6-fab4f9de8d3d
+[I 17:15:24.304 LabApp] The port 8888 is already in use, trying another port.
+[I 17:15:24.610 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 17:15:24.610 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 17:15:24.616 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 17:15:24.616 LabApp] The Jupyter Notebook is running at:
+[I 17:15:24.616 LabApp] http://localhost:8889/?token=f6d12ed02200c5036b5223437bc24aa125d2089657b9e451
+[I 17:15:24.616 LabApp]  or http://127.0.0.1:8889/?token=f6d12ed02200c5036b5223437bc24aa125d2089657b9e451
+[I 17:15:24.616 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:15:25.206 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-22464-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=f6d12ed02200c5036b5223437bc24aa125d2089657b9e451
+     or http://127.0.0.1:8889/?token=f6d12ed02200c5036b5223437bc24aa125d2089657b9e451
+[W 17:15:29.251 LabApp] Could not determine jupyterlab build status without nodejs
+[I 17:15:34.228 LabApp] Kernel started: c5180a50-19de-47b9-8c48-415feabab7fc
+[I 17:15:35.651 LabApp] Adapting from protocol version 5.1 (kernel c5180a50-19de-47b9-8c48-415feabab7fc) to 5.3 (client).
+[I 17:15:35.662 LabApp] Adapting from protocol version 5.1 (kernel c5180a50-19de-47b9-8c48-415feabab7fc) to 5.3 (client).
+2019-12-09 17:15:52.817713: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-09 17:15:52.819758: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2019-12-09 17:16:13.598379: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2019-12-09 17:16:13.598435: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2019-12-09 17:16:13.598471: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (clelie-HP-Notebook): /proc/driver/nvidia/version does not exist
+2019-12-09 17:16:13.598959: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-09 17:16:13.792103: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2019-12-09 17:16:13.793032: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558d0170d490 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-12-09 17:16:13.793109: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2019-12-09 17:16:14.306535: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 18874368 exceeds 10% of system memory.
+2019-12-09 17:16:14.401050: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 18874368 exceeds 10% of system memory.
+2019-12-09 17:16:14.406302: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 18874368 exceeds 10% of system memory.
+2019-12-09 17:16:14.418641: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 37748736 exceeds 10% of system memory.
+2019-12-09 17:16:14.564024: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 37748736 exceeds 10% of system memory.
+[I 17:17:33.712 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 17:27:35.205 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 17:33:37.036 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[W 17:33:53.073 LabApp] Notebook LEO/test_models_leo.ipynb is not trusted
+[I 17:33:54.134 LabApp] Kernel started: ba06a8ee-c98c-4599-ae33-10dcea26b934
+[I 17:34:02.991 LabApp] Adapting from protocol version 5.1 (kernel ba06a8ee-c98c-4599-ae33-10dcea26b934) to 5.3 (client).
+[I 17:34:44.023 LabApp] Kernel restarted: c5180a50-19de-47b9-8c48-415feabab7fc
+[I 17:35:00.648 LabApp] Starting buffering for c5180a50-19de-47b9-8c48-415feabab7fc:9f2fc601-9f94-4fff-a419-837d70dcd84a
+[I 17:35:00.649 LabApp] Starting buffering for ba06a8ee-c98c-4599-ae33-10dcea26b934:dddd2c72-d26f-46bc-bcd8-cc13f429c7ad
+2019-12-09 17:35:05.014100: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-09 17:35:05.016115: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2019-12-09 17:35:24.224202: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2019-12-09 17:35:24.224400: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2019-12-09 17:35:24.245781: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (clelie-HP-Notebook): /proc/driver/nvidia/version does not exist
+2019-12-09 17:35:24.246713: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-09 17:35:24.600233: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2019-12-09 17:35:24.601366: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5561be5b2bf0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-12-09 17:35:24.601445: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[C 18:58:57.580 LabApp] received signal 15, stopping
+[C 18:58:57.931 LabApp] received signal 15, stopping
+[I 18:59:07.104 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:07.269 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:14.616 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:15.735 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:16.145 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:16.384 LabApp] Shutting down 2 kernels
+[I 18:59:16.396 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:16.686 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:17.057 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:17.583 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 18:59:19.085 LabApp] Shutting down 7 kernels
+[I 18:59:24.275 LabApp] Kernel shutdown: c5180a50-19de-47b9-8c48-415feabab7fc
+[I 18:59:26.958 LabApp] Kernel shutdown: e39c5f67-2791-4886-86b7-174ea65b63c4
+[I 18:59:29.444 LabApp] Kernel shutdown: ba06a8ee-c98c-4599-ae33-10dcea26b934
+[I 18:59:29.531 LabApp] Kernel shutdown: 163a2e95-0b74-4bd2-87c6-cc8e1cf1dee7
+[I 18:59:30.634 LabApp] Kernel shutdown: 714421a1-6a3f-4d25-9e51-7cba3d343969
+[I 18:59:30.635 LabApp] Kernel shutdown: 992a6ab5-f57a-4949-8f0e-85d7c237e1c6
+[I 18:59:30.677 LabApp] Kernel shutdown: 2f5e09ee-b25b-4c78-9640-d1d8d8d6fbfa
+[I 18:59:30.687 LabApp] Kernel shutdown: 3d54d9b5-7314-4591-b6ca-82e47812a915
+[I 18:59:30.688 LabApp] Kernel shutdown: 15ba0521-af7f-4f58-87fd-9961b8d71fb6
+[I 13:31:10.506 LabApp] The port 8888 is already in use, trying another port.
+[I 13:31:10.609 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 13:31:10.610 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 13:31:10.619 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 13:31:10.619 LabApp] The Jupyter Notebook is running at:
+[I 13:31:10.619 LabApp] http://localhost:8889/?token=880e3bceb1cf4d06fd4f4ec12f7657a2629de330f44eb5c6
+[I 13:31:10.619 LabApp]  or http://127.0.0.1:8889/?token=880e3bceb1cf4d06fd4f4ec12f7657a2629de330f44eb5c6
+[I 13:31:10.619 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:31:10.675 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-9406-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=880e3bceb1cf4d06fd4f4ec12f7657a2629de330f44eb5c6
+     or http://127.0.0.1:8889/?token=880e3bceb1cf4d06fd4f4ec12f7657a2629de330f44eb5c6
+[W 13:31:13.578 LabApp] Could not determine jupyterlab build status without nodejs
+[W 13:31:14.491 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1575981074475 (127.0.0.1): No such file or directory: Milestone_2_geopanda.ipynb
+[W 13:31:14.492 LabApp] No such file or directory: Milestone_2_geopanda.ipynb
+[W 13:31:14.492 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1575981074475 (127.0.0.1) 1.43ms referer=http://localhost:8889/lab
+[I 13:32:12.943 LabApp] Kernel started: 09f05356-c73c-4c96-b722-fa7712784bf2
+[I 13:32:13.687 LabApp] Adapting from protocol version 5.1 (kernel 09f05356-c73c-4c96-b722-fa7712784bf2) to 5.3 (client).
+[I 13:32:13.698 LabApp] Adapting from protocol version 5.1 (kernel 09f05356-c73c-4c96-b722-fa7712784bf2) to 5.3 (client).
+2019-12-10 13:32:31.811163: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-10 13:32:31.813217: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2019-12-10 13:32:47.138093: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2019-12-10 13:32:47.138187: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2019-12-10 13:32:47.138255: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (clelie-HP-Notebook): /proc/driver/nvidia/version does not exist
+2019-12-10 13:32:47.139280: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-10 13:32:47.322969: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2019-12-10 13:32:47.324468: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55edb28f79a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-12-10 13:32:47.324609: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[I 13:34:12.709 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[W 13:36:07.247 LabApp] Notebook LEO/test_models_leo.ipynb is not trusted
+[I 13:36:07.889 LabApp] Kernel started: a809be69-4bb0-4153-9949-cfe621c129b2
+[I 13:36:08.466 LabApp] Adapting from protocol version 5.1 (kernel a809be69-4bb0-4153-9949-cfe621c129b2) to 5.3 (client).
+[W 13:36:09.062 LabApp] 400 GET /api/contents/LEO/TEST_UNET_leo.ipynb?type=notebook&content=1&1575981369053 (127.0.0.1): Unreadable Notebook: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/LEO/TEST_UNET_leo.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "c...')
+[W 13:36:09.063 LabApp] Unreadable Notebook: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/LEO/TEST_UNET_leo.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "c...')
+[W 13:36:09.063 LabApp] 400 GET /api/contents/LEO/TEST_UNET_leo.ipynb?type=notebook&content=1&1575981369053 (127.0.0.1) 3.05ms referer=http://localhost:8889/lab
+[I 13:36:13.145 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[W 13:36:17.953 LabApp] 400 GET /api/contents/LEO/TEST_UNET_leo.ipynb?type=notebook&content=1&1575981377944 (127.0.0.1): Unreadable Notebook: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/LEO/TEST_UNET_leo.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "c...')
+[W 13:36:17.953 LabApp] Unreadable Notebook: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/LEO/TEST_UNET_leo.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "c...')
+[W 13:36:17.954 LabApp] 400 GET /api/contents/LEO/TEST_UNET_leo.ipynb?type=notebook&content=1&1575981377944 (127.0.0.1) 2.79ms referer=http://localhost:8889/lab
+[I 13:38:07.693 LabApp] Saving file at /LEO/test_models_leo.ipynb
+[W 13:38:07.694 LabApp] Notebook LEO/test_models_leo.ipynb is not trusted
+[I 13:38:13.605 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:40:13.868 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:42:14.112 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:44:14.345 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:46:14.607 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:48:14.829 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:50:15.030 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[I 13:52:15.297 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[W 13:55:14.670 LabApp] Notebook LEO/UNET/trainUnetColab.ipynb is not trusted
+[I 13:55:15.682 LabApp] Kernel started: 16e15c86-1ae4-4b86-98d7-f35bb519df29
+[I 13:55:16.222 LabApp] Adapting from protocol version 5.1 (kernel 16e15c86-1ae4-4b86-98d7-f35bb519df29) to 5.3 (client).
+[I 13:57:15.432 LabApp] Saving file at /LEO/UNET/trainUnetColab.ipynb
+[W 13:57:15.434 LabApp] Notebook LEO/UNET/trainUnetColab.ipynb is not trusted
+[I 13:58:15.540 LabApp] Saving file at /LEO/predictions_unet_clelie.ipynb
+[W 14:16:38.390 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 14:16:39.099 LabApp] Kernel started: 7b95f72c-4e1e-4c51-80a8-16909585db33
+[I 14:16:39.628 LabApp] Adapting from protocol version 5.1 (kernel 7b95f72c-4e1e-4c51-80a8-16909585db33) to 5.3 (client).
+[I 14:18:39.899 LabApp] Saving file at /CLELIE/test_models_leo.ipynb
+[W 14:18:39.901 LabApp] Notebook CLELIE/test_models_leo.ipynb is not trusted
+[I 14:29:17.446 LabApp] Saving file at /LEO/UNET/trainUnetColab.ipynb
+[W 14:29:17.447 LabApp] Notebook LEO/UNET/trainUnetColab.ipynb is not trusted
+[W 14:34:03.384 LabApp] 400 GET /api/contents/LEO/TEST_UNET_leo.ipynb?type=notebook&content=1&1575984843377 (127.0.0.1): Unreadable Notebook: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/LEO/TEST_UNET_leo.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "c...')
+[W 14:34:03.385 LabApp] Unreadable Notebook: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/LEO/TEST_UNET_leo.ipynb NotJSONError('Notebook does not appear to be JSON: \'{\\n "cells": [\\n  {\\n   "cell_type": "c...')
+[W 14:34:03.385 LabApp] 400 GET /api/contents/LEO/TEST_UNET_leo.ipynb?type=notebook&content=1&1575984843377 (127.0.0.1) 1.87ms referer=http://localhost:8889/lab
+[W 15:26:30.099 LabApp] Notebook segment_aerial_images.ipynb is not trusted
+[I 15:26:31.203 LabApp] Kernel started: d2be713d-a847-437d-ba2e-2803dd303185
+[I 15:26:38.460 LabApp] Adapting from protocol version 5.1 (kernel d2be713d-a847-437d-ba2e-2803dd303185) to 5.3 (client).
+[I 15:26:53.608 LabApp] Kernel started: fc3d55be-b150-4a3a-b647-61f41202c00f
+[I 15:26:54.239 LabApp] Adapting from protocol version 5.1 (kernel fc3d55be-b150-4a3a-b647-61f41202c00f) to 5.3 (client).
+[I 15:27:05.667 LabApp] Starting buffering for fc3d55be-b150-4a3a-b647-61f41202c00f:e3c9ee5e-797c-4c2e-af56-3e92d102d0b5
+[I 15:27:06.079 LabApp] Kernel shutdown: fc3d55be-b150-4a3a-b647-61f41202c00f
+[W 15:27:06.108 LabApp] delete /Untitled.ipynb
+[W 15:38:11.166 LabApp] Notebook LEO/test_models_leo.ipynb is not trusted
+[I 15:38:11.688 LabApp] Adapting from protocol version 5.1 (kernel a809be69-4bb0-4153-9949-cfe621c129b2) to 5.3 (client).
+[I 19:19:42.531 LabApp] Starting buffering for 7b95f72c-4e1e-4c51-80a8-16909585db33:c7201fbe-4e86-41c2-b95d-aef190959adf
+[I 19:19:42.694 LabApp] Starting buffering for 16e15c86-1ae4-4b86-98d7-f35bb519df29:30f2215a-d0f3-45ec-8279-10c41b01c9a5
+[I 19:19:42.696 LabApp] Starting buffering for 09f05356-c73c-4c96-b722-fa7712784bf2:126e91f1-c153-40e5-9eeb-78333338c502
+[I 19:19:42.697 LabApp] Starting buffering for a809be69-4bb0-4153-9949-cfe621c129b2:f9286a00-91f5-4d1e-905f-82b97142726e
+[I 19:19:42.698 LabApp] Starting buffering for d2be713d-a847-437d-ba2e-2803dd303185:b93ad8b9-2fe9-4372-92d2-a4859695beda
+[I 22:17:13.826 NotebookApp] The port 8888 is already in use, trying another port.
+[I 22:17:13.847 NotebookApp] The port 8889 is already in use, trying another port.
+[I 22:17:14.256 NotebookApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 22:17:14.256 NotebookApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 22:17:14.262 NotebookApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 22:17:14.262 NotebookApp] The Jupyter Notebook is running at:
+[I 22:17:14.263 NotebookApp] http://localhost:8890/?token=136f843f0315b3d74bef8f7aff2128a707628dc4d07affd4
+[I 22:17:14.263 NotebookApp]  or http://127.0.0.1:8890/?token=136f843f0315b3d74bef8f7aff2128a707628dc4d07affd4
+[I 22:17:14.263 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:17:14.962 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-20127-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=136f843f0315b3d74bef8f7aff2128a707628dc4d07affd4
+     or http://127.0.0.1:8890/?token=136f843f0315b3d74bef8f7aff2128a707628dc4d07affd4
+[E 22:17:19.848 NotebookApp] Could not open static file ''
+[W 22:17:20.155 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 43.04ms referer=http://localhost:8890/tree?token=136f843f0315b3d74bef8f7aff2128a707628dc4d07affd4
+[W 22:17:20.284 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.11ms referer=http://localhost:8890/tree?token=136f843f0315b3d74bef8f7aff2128a707628dc4d07affd4
+[I 22:20:56.373 NotebookApp] Creating new notebook in /LEO
+[W 22:20:59.751 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 20.55ms referer=http://localhost:8890/notebooks/LEO/Untitled.ipynb?kernel_name=python3
+[W 22:20:59.947 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.38ms referer=http://localhost:8890/notebooks/LEO/Untitled.ipynb?kernel_name=python3
+[I 22:21:02.658 NotebookApp] Kernel started: d822f5d9-c722-4ba3-be67-45df7738ee34
+[I 22:21:03.986 NotebookApp] Adapting from protocol version 5.1 (kernel d822f5d9-c722-4ba3-be67-45df7738ee34) to 5.3 (client).
+[I 22:21:04.769 NotebookApp] Starting buffering for d822f5d9-c722-4ba3-be67-45df7738ee34:e6d09efb0e244796b99f99fadd6b1cbd
+[W 22:21:17.802 NotebookApp] delete /LEO/Untitled.ipynb
+[I 22:21:36.815 NotebookApp] Creating new file in /LEO
+[W 22:21:37.472 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 15.49ms referer=http://localhost:8890/edit/LEO/untitled.txt
+[W 22:21:37.517 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.36ms referer=http://localhost:8890/edit/LEO/untitled.txt
+[W 22:25:00.183 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 3.66ms referer=http://localhost:8890/edit/LEO/Model_LIDAR.py
+[W 22:25:00.238 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.09ms referer=http://localhost:8890/edit/LEO/Model_LIDAR.py
+[I 22:25:14.503 NotebookApp] Saving file at /LEO/deep.py
+[I 14:39:12.322 LabApp] The port 8888 is already in use, trying another port.
+[I 14:39:12.343 LabApp] The port 8889 is already in use, trying another port.
+[I 14:39:12.343 LabApp] The port 8890 is already in use, trying another port.
+[I 14:39:12.344 LabApp] The port 8891 is already in use, trying another port.
+[I 14:39:12.344 LabApp] The port 8892 is already in use, trying another port.
+[I 14:39:12.495 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 14:39:12.495 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 14:39:12.502 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 14:39:12.502 LabApp] The Jupyter Notebook is running at:
+[I 14:39:12.502 LabApp] http://localhost:8857/?token=dea867f84b91cd1ba02dbfccc458bf6d60eb247f03165895
+[I 14:39:12.503 LabApp]  or http://127.0.0.1:8857/?token=dea867f84b91cd1ba02dbfccc458bf6d60eb247f03165895
+[I 14:39:12.503 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:39:12.690 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-28657-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8857/?token=dea867f84b91cd1ba02dbfccc458bf6d60eb247f03165895
+     or http://127.0.0.1:8857/?token=dea867f84b91cd1ba02dbfccc458bf6d60eb247f03165895
+[W 14:39:17.358 LabApp] Could not determine jupyterlab build status without nodejs
+[W 14:39:21.155 LabApp] Notebook LEO/test_models_leo.ipynb is not trusted
+[I 14:39:22.075 LabApp] Kernel started: ac6dfc8a-7c4d-438c-b842-d51deb994a1d
+[I 14:39:22.095 LabApp] Kernel started: ccf4a063-c367-4919-b560-349cb4ec73c2
+[I 14:39:23.535 LabApp] Adapting from protocol version 5.1 (kernel ac6dfc8a-7c4d-438c-b842-d51deb994a1d) to 5.3 (client).
+[I 14:39:23.552 LabApp] Adapting from protocol version 5.1 (kernel ac6dfc8a-7c4d-438c-b842-d51deb994a1d) to 5.3 (client).
+[I 14:39:23.575 LabApp] Adapting from protocol version 5.1 (kernel ccf4a063-c367-4919-b560-349cb4ec73c2) to 5.3 (client).
+[I 14:39:23.586 LabApp] Adapting from protocol version 5.1 (kernel ccf4a063-c367-4919-b560-349cb4ec73c2) to 5.3 (client).
+[W 14:39:42.546 LabApp] Notebook trainDeep.ipynb is not trusted
+[I 14:39:43.568 LabApp] Kernel started: 6c121d61-d19f-4d71-bcf2-8127ed9821ed
+[I 14:39:44.138 LabApp] Adapting from protocol version 5.1 (kernel 6c121d61-d19f-4d71-bcf2-8127ed9821ed) to 5.3 (client).
+[I 14:41:43.287 LabApp] Saving file at /trainDeep.ipynb
+[W 14:41:43.403 LabApp] Notebook trainDeep.ipynb is not trusted
+[I 17:11:30.072 LabApp] The port 8888 is already in use, trying another port.
+[I 17:11:30.237 LabApp] The port 8889 is already in use, trying another port.
+[I 17:11:30.894 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 17:11:30.895 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 17:11:30.921 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 17:11:30.921 LabApp] The Jupyter Notebook is running at:
+[I 17:11:30.921 LabApp] http://localhost:8890/?token=8c7ff358c1627c18c9813817501a4d16a03c232c4517b42a
+[I 17:11:30.921 LabApp]  or http://127.0.0.1:8890/?token=8c7ff358c1627c18c9813817501a4d16a03c232c4517b42a
+[I 17:11:30.922 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:11:32.748 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-14731-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=8c7ff358c1627c18c9813817501a4d16a03c232c4517b42a
+     or http://127.0.0.1:8890/?token=8c7ff358c1627c18c9813817501a4d16a03c232c4517b42a
+[W 17:12:17.097 LabApp] Could not determine jupyterlab build status without nodejs
+[W 17:12:25.728 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1576339945691 (127.0.0.1): No such file or directory: Milestone_2_geopanda.ipynb
+[W 17:12:25.729 LabApp] No such file or directory: Milestone_2_geopanda.ipynb
+[W 17:12:25.730 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1576339945691 (127.0.0.1) 29.22ms referer=http://localhost:8890/lab
+[W 17:12:25.736 LabApp] 404 GET /api/contents/countries.geo.json?content=0&1576339945693 (127.0.0.1): No such file or directory: countries.geo.json
+[W 17:12:25.737 LabApp] No such file or directory: countries.geo.json
+[W 17:12:25.738 LabApp] 404 GET /api/contents/countries.geo.json?content=0&1576339945693 (127.0.0.1) 5.10ms referer=http://localhost:8890/lab
+[W 17:13:59.401 LabApp] Notebook LEO/Dossier final/run_unet.ipynb is not trusted
+[I 17:14:03.705 LabApp] Kernel started: 96460c95-a70c-4f29-9b96-6a0e6e94a0fd
+[I 17:14:40.955 LabApp] Adapting from protocol version 5.1 (kernel 96460c95-a70c-4f29-9b96-6a0e6e94a0fd) to 5.3 (client).
+[I 17:14:40.956 LabApp] Adapting from protocol version 5.1 (kernel 96460c95-a70c-4f29-9b96-6a0e6e94a0fd) to 5.3 (client).
+[I 17:14:40.977 LabApp] Adapting from protocol version 5.1 (kernel 96460c95-a70c-4f29-9b96-6a0e6e94a0fd) to 5.3 (client).
+[I 17:14:40.988 LabApp] Adapting from protocol version 5.1 (kernel 96460c95-a70c-4f29-9b96-6a0e6e94a0fd) to 5.3 (client).
+[I 17:16:02.457 LabApp] Saving file at /LEO/Dossier final/run_unet.ipynb
+[W 17:16:02.458 LabApp] Notebook LEO/Dossier final/run_unet.ipynb is not trusted
+[I 18:29:52.731 LabApp] Creating new notebook in /LEO/Dossier final
+[I 18:29:53.628 LabApp] Kernel started: 526fc083-ad61-4f47-9165-9cf4d8c0bbfb
+[I 18:29:54.702 LabApp] Adapting from protocol version 5.1 (kernel 526fc083-ad61-4f47-9165-9cf4d8c0bbfb) to 5.3 (client).
+[I 18:31:53.948 LabApp] Saving file at /LEO/Dossier final/Untitled.ipynb
+2019-12-14 18:32:31.961607: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-14 18:32:31.974488: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 18:33:54.218 LabApp] Saving file at /LEO/Dossier final/Untitled.ipynb
+[I 18:35:54.704 LabApp] Saving file at /LEO/Dossier final/Untitled.ipynb
+[I 18:41:46.510 LabApp] Starting buffering for 96460c95-a70c-4f29-9b96-6a0e6e94a0fd:bb934bb6-b584-4291-96fb-93fd22ffd400
+[I 18:41:46.608 LabApp] Starting buffering for 526fc083-ad61-4f47-9165-9cf4d8c0bbfb:2d277c6d-1304-4e2c-b818-bebd1173953b
+[I 10:00:30.478 LabApp] The port 8888 is already in use, trying another port.
+[I 10:00:30.493 LabApp] The port 8889 is already in use, trying another port.
+[I 10:00:30.494 LabApp] The port 8890 is already in use, trying another port.
+[I 10:00:30.494 LabApp] The port 8891 is already in use, trying another port.
+[I 10:00:30.604 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 10:00:30.604 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 10:00:30.607 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 10:00:30.607 LabApp] The Jupyter Notebook is running at:
+[I 10:00:30.607 LabApp] http://localhost:8892/?token=9609a2de24284ce12e9d511dc35064bdc66952a0b9a02582
+[I 10:00:30.607 LabApp]  or http://127.0.0.1:8892/?token=9609a2de24284ce12e9d511dc35064bdc66952a0b9a02582
+[I 10:00:30.608 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 10:00:30.753 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-7540-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8892/?token=9609a2de24284ce12e9d511dc35064bdc66952a0b9a02582
+     or http://127.0.0.1:8892/?token=9609a2de24284ce12e9d511dc35064bdc66952a0b9a02582
+[W 10:00:34.678 LabApp] Could not determine jupyterlab build status without nodejs
+[W 10:00:37.670 LabApp] 404 GET /api/contents/analysis_efficiency_over_year.ipynb?content=0&1576486837554 (127.0.0.1): No such file or directory: analysis_efficiency_over_year.ipynb
+[W 10:00:37.671 LabApp] No such file or directory: analysis_efficiency_over_year.ipynb
+[W 10:00:37.672 LabApp] 404 GET /api/contents/analysis_efficiency_over_year.ipynb?content=0&1576486837554 (127.0.0.1) 7.34ms referer=http://localhost:8892/lab
+[W 10:00:37.673 LabApp] 404 GET /api/contents/to_be_sent/Milestone_2.ipynb?content=0&1576486837553 (127.0.0.1): No such file or directory: to_be_sent/Milestone_2.ipynb
+[W 10:00:37.673 LabApp] No such file or directory: to_be_sent/Milestone_2.ipynb
+[W 10:00:37.673 LabApp] 404 GET /api/contents/to_be_sent/Milestone_2.ipynb?content=0&1576486837553 (127.0.0.1) 6.48ms referer=http://localhost:8892/lab
+[W 10:00:37.674 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1576486837554 (127.0.0.1): No such file or directory: Milestone_2_geopanda.ipynb
+[W 10:00:37.675 LabApp] No such file or directory: Milestone_2_geopanda.ipynb
+[W 10:00:37.675 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1576486837554 (127.0.0.1) 6.47ms referer=http://localhost:8892/lab
+[I 10:01:34.366 LabApp] Kernel started: f2a7dcaf-7662-44aa-974e-d6c09677c2af
+[I 10:01:35.508 LabApp] Adapting from protocol version 5.1 (kernel f2a7dcaf-7662-44aa-974e-d6c09677c2af) to 5.3 (client).
+[I 10:01:35.525 LabApp] Adapting from protocol version 5.1 (kernel f2a7dcaf-7662-44aa-974e-d6c09677c2af) to 5.3 (client).
+[I 10:01:39.836 LabApp] Starting buffering for f2a7dcaf-7662-44aa-974e-d6c09677c2af:9e5e079e-97b3-427a-8c0f-d8c401a46305
+[I 10:01:40.250 LabApp] Kernel shutdown: f2a7dcaf-7662-44aa-974e-d6c09677c2af
+[W 10:01:40.283 LabApp] delete /LEO/Dossier final/Untitled.ipynb
+[W 10:01:43.848 LabApp] Notebook LEO/Dossier final/run_unet2.ipynb is not trusted
+[I 10:01:45.004 LabApp] Kernel started: 980f14fd-9eee-44d9-9ff2-46402df1a07e
+[I 10:01:45.741 LabApp] Adapting from protocol version 5.1 (kernel 980f14fd-9eee-44d9-9ff2-46402df1a07e) to 5.3 (client).
+[W 10:01:45.975 LabApp] Notebook LEO/Dossier final/run_unet.ipynb is not trusted
+[I 10:01:47.009 LabApp] Kernel started: 4140f2ed-8837-4bcb-ad74-c6962e27de54
+[I 10:01:47.621 LabApp] Adapting from protocol version 5.1 (kernel 4140f2ed-8837-4bcb-ad74-c6962e27de54) to 5.3 (client).
+[W 10:01:48.424 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 10:01:49.611 LabApp] Kernel started: c3de5e8d-4040-4250-98d4-e23a123636fa
+[I 10:01:50.633 LabApp] Adapting from protocol version 5.1 (kernel c3de5e8d-4040-4250-98d4-e23a123636fa) to 5.3 (client).
+[I 10:03:44.759 LabApp] Saving file at /LEO/Dossier final/run_unet2.ipynb
+[W 10:03:44.760 LabApp] Notebook LEO/Dossier final/run_unet2.ipynb is not trusted
+[I 10:03:47.752 LabApp] Saving file at /LEO/Dossier final/run_unet.ipynb
+[W 10:03:47.753 LabApp] Notebook LEO/Dossier final/run_unet.ipynb is not trusted
+[I 10:03:49.763 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 10:03:49.764 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 10:07:37.718 LabApp] Creating new file in /LEO/Dossier final
+[I 10:09:37.987 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:11:38.125 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:13:38.276 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:15:38.398 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:19:39.721 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:21:39.875 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:23:39.984 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:25:40.081 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:27:40.216 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:29:40.341 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:33:41.148 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:35:41.274 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:37:11.888 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:37:31.137 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:45:02.972 LabApp] Creating new file in /LEO/Dossier final
+[I 10:45:31.393 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:47:03.329 LabApp] Saving file at /LEO/Dossier final/interface_user.py
+[I 10:49:03.456 LabApp] Saving file at /LEO/Dossier final/interface_user.py
+[W 10:50:02.964 LabApp] delete /LEO/Dossier final/interface_user.py
+[I 10:51:31.508 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:55:31.644 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 10:55:55.858 LabApp] Saving file at /LEO/Dossier final/run.py
+[W 11:11:14.190 LabApp] Notebook LEO/Dossier final/Test_logreg.ipynb is not trusted
+[I 11:11:15.240 LabApp] Kernel started: 800a5912-d01e-4a76-9342-86ae209c4870
+[I 11:11:24.377 LabApp] Adapting from protocol version 5.1 (kernel 800a5912-d01e-4a76-9342-86ae209c4870) to 5.3 (client).
+[I 11:11:32.691 LabApp] Creating new file in /LEO/Dossier final
+[I 11:13:32.970 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:15:02.133 LabApp] Saving file at /LEO/Dossier final/logistic_reg_preprocess.py
+[I 11:15:14.516 LabApp] Saving file at /LEO/Dossier final/Test_logreg.ipynb
+[W 11:15:14.536 LabApp] Notebook LEO/Dossier final/Test_logreg.ipynb is not trusted
+[I 11:15:33.123 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:15:40.233 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:15:54.754 LabApp] Saving file at /LEO/Dossier final/logistic_regression.py
+[I 11:17:02.243 LabApp] Saving file at /LEO/Dossier final/logistic_reg_preprocess.py
+[I 11:17:40.515 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:19:02.337 LabApp] Saving file at /LEO/Dossier final/logistic_reg_preprocess.py
+[I 11:19:40.646 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:21:40.810 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:23:41.993 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:24:30.514 LabApp] Saving file at /LEO/Dossier final/run_logistic_regression.py
+[I 11:24:33.234 LabApp] Saving file at /LEO/Dossier final/logistic_reg_preprocess.py
+[I 11:24:35.890 LabApp] Saving file at /LEO/Dossier final/logistic_regression.py
+[W 11:26:19.160 LabApp] Notebook LEO/Dossier final/Test_logreg.ipynb is not trusted
+[I 11:26:19.502 LabApp] Adapting from protocol version 5.1 (kernel 800a5912-d01e-4a76-9342-86ae209c4870) to 5.3 (client).
+[I 11:29:19.650 LabApp] Creating new file in /LEO/Dossier final
+[I 11:29:58.681 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:29:58.681 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 11:43:07.948 LabApp] Saving file at /LEO/Dossier final/constants.py
+[I 11:44:01.596 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:44:01.597 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 11:46:01.867 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:46:01.867 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 11:48:02.107 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:48:02.107 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 11:50:03.108 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:50:03.129 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 11:54:04.388 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:54:04.390 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 11:58:05.811 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 11:58:05.812 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 14:15:00.519 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 14:15:04.082 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 14:17:04.804 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 14:26:59.097 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 14:26:59.098 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 14:28:59.605 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 14:28:59.605 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:02:46.623 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:02:46.624 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:04:46.927 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:04:46.927 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:06:48.193 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:06:48.194 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:08:48.431 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:08:48.432 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:10:49.167 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:10:49.168 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:11:24.197 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:11:24.198 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+2019-12-16 15:18:59.154889: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-16 15:18:59.165204: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 15:19:27.702 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:19:27.703 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+2019-12-16 15:20:34.651339: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2019-12-16 15:20:34.651450: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2019-12-16 15:20:34.651675: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (clelie-HP-Notebook): /proc/driver/nvidia/version does not exist
+2019-12-16 15:20:34.652816: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-16 15:20:34.900289: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2019-12-16 15:20:34.901545: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55838f3e66a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-12-16 15:20:34.901651: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[I 15:21:19.699 LabApp] Creating new directory in /LEO/Dossier final
+[I 15:21:26.726 LabApp] Creating new directory in /LEO/Dossier final/train
+[I 15:21:27.978 LabApp] Saving file at /LEO/Dossier final/run_unet_k_fold.ipynb
+[W 15:21:27.979 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:21:30.786 LabApp] Creating new directory in /LEO/Dossier final/train
+[I 15:27:14.049 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 15:27:14.081 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 15:27:14.084 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 15:27:14.084 LabApp] The Jupyter Notebook is running at:
+[I 15:27:14.084 LabApp] http://localhost:8888/?token=3d6353afe2b749bb4fd8740be8986c66afb2e932dd38b4f5
+[I 15:27:14.084 LabApp]  or http://127.0.0.1:8888/?token=3d6353afe2b749bb4fd8740be8986c66afb2e932dd38b4f5
+[I 15:27:14.084 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:27:14.440 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-2253-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=3d6353afe2b749bb4fd8740be8986c66afb2e932dd38b4f5
+     or http://127.0.0.1:8888/?token=3d6353afe2b749bb4fd8740be8986c66afb2e932dd38b4f5
+[W 15:27:17.917 LabApp] Could not determine jupyterlab build status without nodejs
+[W 15:27:22.818 LabApp] Notebook LEO/Dossier final/run_unet.ipynb is not trusted
+[W 15:27:22.918 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 15:27:24.599 LabApp] Kernel started: 5bd9f036-ae87-4428-a92d-739b1076114a
+[I 15:27:24.632 LabApp] Kernel started: b11c57c5-252d-43f9-a985-d2629fd14e79
+[I 15:27:26.574 LabApp] Adapting from protocol version 5.1 (kernel 5bd9f036-ae87-4428-a92d-739b1076114a) to 5.3 (client).
+[I 15:27:26.611 LabApp] Adapting from protocol version 5.1 (kernel 5bd9f036-ae87-4428-a92d-739b1076114a) to 5.3 (client).
+[I 15:27:26.632 LabApp] Adapting from protocol version 5.1 (kernel b11c57c5-252d-43f9-a985-d2629fd14e79) to 5.3 (client).
+[I 15:27:26.648 LabApp] Adapting from protocol version 5.1 (kernel b11c57c5-252d-43f9-a985-d2629fd14e79) to 5.3 (client).
+[I 16:32:53.008 LabApp] Starting buffering for 5bd9f036-ae87-4428-a92d-739b1076114a:8262359a-0cdf-445b-8559-5db54fa77655
+[I 16:32:53.048 LabApp] Starting buffering for b11c57c5-252d-43f9-a985-d2629fd14e79:1da0728a-24e7-4ac0-939d-867aab3e4637
+[I 16:44:35.963 LabApp] The port 8888 is already in use, trying another port.
+[I 16:44:36.048 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 16:44:36.048 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 16:44:36.058 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 16:44:36.058 LabApp] The Jupyter Notebook is running at:
+[I 16:44:36.058 LabApp] http://localhost:8889/?token=ba41d7ae76ffa196ea1e013134edf34cb8c713729286576a
+[I 16:44:36.058 LabApp]  or http://127.0.0.1:8889/?token=ba41d7ae76ffa196ea1e013134edf34cb8c713729286576a
+[I 16:44:36.058 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:44:36.174 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-4514-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=ba41d7ae76ffa196ea1e013134edf34cb8c713729286576a
+     or http://127.0.0.1:8889/?token=ba41d7ae76ffa196ea1e013134edf34cb8c713729286576a
+[W 16:44:39.419 LabApp] Could not determine jupyterlab build status without nodejs
+[W 16:44:41.500 LabApp] Notebook LEO/Dossier final/run_unet.ipynb is not trusted
+[W 16:44:41.650 LabApp] Notebook LEO/Dossier final/run_unet_k_fold.ipynb is not trusted
+[I 16:44:43.869 LabApp] Kernel started: a746d52b-5287-4abd-8cf0-e6b8c728140e
+[I 16:44:43.920 LabApp] Kernel started: e7156d53-7743-4669-a81a-07cc13e398e4
+[I 16:44:45.063 LabApp] Adapting from protocol version 5.1 (kernel a746d52b-5287-4abd-8cf0-e6b8c728140e) to 5.3 (client).
+[I 16:44:45.197 LabApp] Adapting from protocol version 5.1 (kernel a746d52b-5287-4abd-8cf0-e6b8c728140e) to 5.3 (client).
+[I 16:44:45.284 LabApp] Adapting from protocol version 5.1 (kernel e7156d53-7743-4669-a81a-07cc13e398e4) to 5.3 (client).
+[I 16:44:45.309 LabApp] Adapting from protocol version 5.1 (kernel e7156d53-7743-4669-a81a-07cc13e398e4) to 5.3 (client).
+[I 16:47:34.609 LabApp] Creating new file in /LEO/Dossier final
+[I 16:49:34.871 LabApp] Saving file at /LEO/Dossier final/fit_model.py
+[I 16:51:35.007 LabApp] Saving file at /LEO/Dossier final/fit_model.py
+[I 16:52:03.090 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 16:54:03.203 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 16:56:03.323 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 16:58:03.474 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:00:03.572 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:02:03.689 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:04:03.805 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:08:03.895 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:10:04.026 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:12:04.141 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:14:04.256 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:17:34.054 LabApp] Saving file at /LEO/Dossier final/run.py
+[I 17:18:21.874 LabApp] Saving file at /LEO/Dossier final/run.py
