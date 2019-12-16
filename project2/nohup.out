@@ -672,3 +672,6 @@
 [I 17:14:04.256 LabApp] Saving file at /LEO/Dossier final/run.py
 [I 17:17:34.054 LabApp] Saving file at /LEO/Dossier final/run.py
 [I 17:18:21.874 LabApp] Saving file at /LEO/Dossier final/run.py
+[W 17:30:32.953 LabApp] Notebook LEO/Dossier final/run_unet2.ipynb is not trusted
+[I 17:30:33.925 LabApp] Kernel started: 0724ef53-01c9-4db7-b488-2322237afa9c
+[I 17:30:34.476 LabApp] Adapting from protocol version 5.1 (kernel 0724ef53-01c9-4db7-b488-2322237afa9c) to 5.3 (client).
