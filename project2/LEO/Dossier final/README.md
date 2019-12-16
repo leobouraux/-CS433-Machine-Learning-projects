@@ -1,7 +1,6 @@
 # Project Road Segmentation 
 
 ___
-
 ***Authors***
 
 • Clélie de Witasse
