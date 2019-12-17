@@ -4,6 +4,11 @@ from keras.layers import *
 from keras.optimizers import *
 from keras import backend as K
 from data_postprocess import *
+from data_preprocess import *
+from unet import *
+from constants import *
+
+
 
 def fit_unet(rotation, MODEL_PATH, MODEL_NAME):
     # Load dataset
@@ -17,17 +22,17 @@ def fit_unet(rotation, MODEL_PATH, MODEL_NAME):
 
     train_generator = dataGenerator(2, DATA_PATH+'train',
                                     'img_aug_tr',
-                                    'gts_aug_tr'
+                                    'gt_aug_tr'
                                     ,data_gen_args,
                                     (SIDE,SIDE))
 
     validation_generator = dataGenerator(2, DATA_PATH+'train',
                                     'img_aug_te',
-                                    'gts_aug_te'
+                                    'gt_aug_te'
                                     ,data_gen_args,
                                     (SIDE,SIDE))
 
-    filepath = root_path+"history/weights.{epoch:02d}-{val_f1_m:.2f}.hdf5"
+    filepath = "weights.{epoch:02d}-{val_f1_m:.2f}.hdf5"
 
     csv_logger = CSVLogger("AccuracyHistory.csv")
     cp_callback = ModelCheckpoint(filepath=filepath, verbose=1, save_weights_only=True, period=1)
