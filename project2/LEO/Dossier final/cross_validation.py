@@ -41,7 +41,7 @@ def iterations(model, Y, X, k_indices, k, patch_size):
     Z = model.logisticReg(tx_te, patch_size)
     
     # Calculate ground-truth labels
-    img_patches_gt = create_patches(y_te, 16)
+    img_patches_gt = create_patches(y_te, patch_size)
     y_real = np.mean(img_patches_gt, axis=(1, 2)) > 0.25
     
     return classification_results(y_real, Z)    
