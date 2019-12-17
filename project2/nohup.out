@@ -717,3 +717,34 @@
 [I 23:30:02.681 LabApp] Saving file at /LEO/Dossier final/run.py
 [I 23:41:44.028 LabApp] Interrupted...
 [I 23:41:44.029 LabApp] Shutting down 0 kernels
+[I 22:13:25.224 LabApp] The port 8888 is already in use, trying another port.
+[I 22:13:25.373 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 22:13:25.374 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 22:13:25.381 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2
+[I 22:13:25.381 LabApp] The Jupyter Notebook is running at:
+[I 22:13:25.381 LabApp] http://localhost:8889/?token=1aa3174747e46582cbef9c5c84d907e49515fc065d8d052d
+[I 22:13:25.381 LabApp]  or http://127.0.0.1:8889/?token=1aa3174747e46582cbef9c5c84d907e49515fc065d8d052d
+[I 22:13:25.381 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:13:25.589 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-14384-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=1aa3174747e46582cbef9c5c84d907e49515fc065d8d052d
+     or http://127.0.0.1:8889/?token=1aa3174747e46582cbef9c5c84d907e49515fc065d8d052d
+[W 22:13:29.358 LabApp] Could not determine jupyterlab build status without nodejs
+[W 22:13:31.995 LabApp] 404 GET /api/contents/to_be_sent?1576617211983 (127.0.0.1): No such file or directory: to_be_sent
+[W 22:13:31.995 LabApp] No such file or directory: to_be_sent
+[W 22:13:31.995 LabApp] 404 GET /api/contents/to_be_sent?1576617211983 (127.0.0.1) 1.18ms referer=http://localhost:8889/lab
+[W 22:13:31.996 LabApp] 404 GET /api/contents/to_be_sent/Milestone_2maps_color.ipynb?content=0&1576617211984 (127.0.0.1): No such file or directory: to_be_sent/Milestone_2maps_color.ipynb
+[W 22:13:31.996 LabApp] No such file or directory: to_be_sent/Milestone_2maps_color.ipynb
+[W 22:13:31.997 LabApp] 404 GET /api/contents/to_be_sent/Milestone_2maps_color.ipynb?content=0&1576617211984 (127.0.0.1) 1.47ms referer=http://localhost:8889/lab
+[W 22:14:11.265 LabApp] Notebook LEO/Dossier final/Test_logreg.ipynb is not trusted
+[I 22:14:12.032 LabApp] Kernel started: e22dfa3f-e225-4329-ba6a-1643201a0712
+[I 22:14:13.329 LabApp] Adapting from protocol version 5.1 (kernel e22dfa3f-e225-4329-ba6a-1643201a0712) to 5.3 (client).
+[I 22:14:13.342 LabApp] Adapting from protocol version 5.1 (kernel e22dfa3f-e225-4329-ba6a-1643201a0712) to 5.3 (client).
+[W 22:24:36.137 LabApp] Notebook LEO/Dossier final/run_unet_colab_clelie.ipynb is not trusted
+[I 22:24:37.407 LabApp] Kernel started: 9c69cc18-28cb-43e7-a73b-9334061cbab4
+[I 22:24:37.950 LabApp] Adapting from protocol version 5.1 (kernel 9c69cc18-28cb-43e7-a73b-9334061cbab4) to 5.3 (client).
+[I 22:26:37.185 LabApp] Saving file at /LEO/Dossier final/run_unet_colab_clelie.ipynb
+[W 22:26:37.187 LabApp] Notebook LEO/Dossier final/run_unet_colab_clelie.ipynb is not trusted

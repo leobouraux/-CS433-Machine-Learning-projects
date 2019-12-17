@@ -8,40 +8,32 @@ import matplotlib.pyplot as plt
 
 from constant_values import *
 
-def data_augmentation(directory_name, seed): 
+def dataset_augmentation(directory_name, seed): 
+    data_aug_path = "Data_aug"
+    if not os.path.exists(data_aug_path):
+        os.mkdir(data_aug_path"Data_aug")
     datagen = ImageDataGenerator()
     filenames = os.listdir(directory_name)
     
     #create 24 rotated images for one image
-    angls = np.arange(0, 360, 15)
-    zooms = np.array([1., 0.85, 0.8, 0.75, 0.8, 0.85,
-                      1., 0.85, 0.8, 0.75, 0.8, 0.85,
-                      1., 0.85, 0.8, 0.75, 0.8, 0.85,
-                      1., 0.85, 0.8, 0.75, 0.8, 0.85])
+    angls = 45
+    zoom = 0.75
     imgs = []
     
     for i, fileNb in enumerate(filenames):
         full_name = directory_name+fileNb
+
         img=mpimg.imread(full_name)
-        imgr = img_to_array(img)
-        for j, angle in enumerate(angls):
-            zoom = zooms[j]
-            img2 = datagen.apply_transform(x=imgr, transform_parameters={'theta':angle, 'zx':zoom, 'zy':zoom})
-            imgs.append(img2)
+	io.imsave(data_aug_path+fileNb, img)
+        img_asarray = img_to_array(img)
+
+        out = datagen.apply_transform(x=img_asarray, transform_parameters={'theta':angle, 'zx':zoom, 'zy':zoom})
+	fileNb2 = fileNb+i
+	print(out.shape)
+        io.imsave(data_aug_path+fileNb2, out)
         sys.stdout.write("\rImage {}/{} is being loaded".format(i+1,len(filenames)))
         sys.stdout.flush()
         
-    print(' ... Shuffle data ...')
-    imgs1 = np.asarray(imgs)
-    np.random.seed(seed)
-    rand = np.random.randint(imgs1.shape[0], size=imgs1.shape[0])
-    imgs2 = imgs1[rand, :, :, :]
-    
-    # shows images
-    #IMG = array_to_img(imgs2[0,:,:,:])
-    #imgplot = plt.imshow(IMG)
-    #plt.show()
-    return imgs2
 
 #Assign a label to a patch v
 def value_to_class(v):
