@@ -3,7 +3,7 @@
 import numpy as np
 from sklearn import linear_model
 from sklearn.preprocessing import PolynomialFeatures
-from helpers import *
+from logistic_reg_preprocess import *
 
 class LogisticModel:
 

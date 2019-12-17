@@ -1,7 +1,6 @@
 # Project Road Segmentation 
 
 ___
-
 ***Authors***
 
 • Clélie de Witasse
@@ -56,11 +55,19 @@ You can find a documentation on this [website](https://python.developpez.com/cou
 The datasets are available either from the [EPFL private challenge page](https://www.crowdai.org/challenges/epfl-ml-road-segmentation) or in the folder `Data`on this GitHub.
 
 ## How to launch `run.py`
-The data must be uploaded in the `Data` folder, where the subfolder `training` contains the satellite images and their groundtruthes and `test_set_images`  contains the test satellite images. In a terminal, the command `python run.py` launch the script and a prediction folder will be created in the root folder.
+The data must be uploaded in the `Data` folder, where the subfolder `training` contains the satellite images and their groundtruthes and `test_set_images`  contains the test satellite images. In a terminal, the command `python run.py` launch the script and a prediction folder will be created in the root folder. Please make sure that all the constants and the different paths are well defined.
 
 ## Scripts
 
 #### `run.py`:
+This script run the overall U-Net segmentation. You can either choose to train a model or load pretrained weights by choosing the value of `train_model`. A 5-fold cross-validation will be executed (est ce que ca vaut la peine de mettre des pretrained dans ce cas?). In each cross-validation iteration, 3 predictions will be computed for each image of the dataset.
+
+* In the first situation, images are rotated by a random angle inferior to 5°, to handle with vertical and horizontal roads.
+* In the second situation, images are rotated by a random angle inferior to 90°, to handle with slanting roads.
+* In the third situation, images are rotated by a random angle inferior to 180°.
+
+The mean of those predictions will give the final prediction for each image.
+Eventually, a submission is created for the AI-crowd challenge. The predictions are patched to respect the criterion of the challenge, but the results seems better without any patch.
 
 #### `data_preprocess.py`:
 Contains functions to preprocess the data properly:
@@ -94,12 +101,14 @@ Contains functions that are used to create the U-Net model:
 * **`unet256`**: builds a U-Net model that is tu be used with 256x256 images.
 * **`unet512`**: builds a U-Net model that is tu be used with 512x512 images.
 
+#### `fit_model.py`:
+Contains a function **`fit_unet`** that fit a U-Net model.
+
 #### `logistic_regression.py`:
 ???
 
 #### `constants.py`:
 Contains useful constant values that are used in other scripts.
-
 
 #### `cross_validation.py`:
 Contains useful functions to implement cross validation on the segmentation models:

@@ -1,0 +1,99 @@
+[I 16:42:29.485 LabApp] The port 8888 is already in use, trying another port.
+[I 16:42:29.490 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 16:42:29.490 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 16:42:29.492 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/CLELIE
+[I 16:42:29.492 LabApp] The Jupyter Notebook is running at:
+[I 16:42:29.492 LabApp] http://localhost:8889/?token=057d7ef648225d195df905f2453775ad882bb7c2bd4371f5
+[I 16:42:29.492 LabApp]  or http://127.0.0.1:8889/?token=057d7ef648225d195df905f2453775ad882bb7c2bd4371f5
+[I 16:42:29.492 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:42:29.519 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-2849-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=057d7ef648225d195df905f2453775ad882bb7c2bd4371f5
+     or http://127.0.0.1:8889/?token=057d7ef648225d195df905f2453775ad882bb7c2bd4371f5
+[W 16:42:32.104 LabApp] Could not determine jupyterlab build status without nodejs
+[W 16:42:32.658 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1575819752639 (127.0.0.1): No such file or directory: Milestone_2_geopanda.ipynb
+[W 16:42:32.658 LabApp] No such file or directory: Milestone_2_geopanda.ipynb
+[W 16:42:32.659 LabApp] 404 GET /api/contents/Milestone_2_geopanda.ipynb?content=0&1575819752639 (127.0.0.1) 3.50ms referer=http://localhost:8889/lab
+[W 16:42:32.659 LabApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1575819752640 (127.0.0.1): No such file or directory: Untitled1.ipynb
+[W 16:42:32.660 LabApp] No such file or directory: Untitled1.ipynb
+[W 16:42:32.660 LabApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1575819752640 (127.0.0.1) 4.22ms referer=http://localhost:8889/lab
+[W 16:42:32.661 LabApp] 404 GET /api/contents/countries.geo.json?content=0&1575819752641 (127.0.0.1): No such file or directory: countries.geo.json
+[W 16:42:32.661 LabApp] No such file or directory: countries.geo.json
+[W 16:42:32.662 LabApp] 404 GET /api/contents/countries.geo.json?content=0&1575819752641 (127.0.0.1) 4.74ms referer=http://localhost:8889/lab
+[I 16:44:37.388 LabApp] Saving file at /UNet.py
+[I 16:46:37.497 LabApp] Saving file at /UNet.py
+[I 17:06:38.613 LabApp] Saving file at /UNet.py
+[I 17:12:38.766 LabApp] Saving file at /UNet.py
+[I 17:24:40.553 LabApp] Saving file at /UNet.py
+[I 17:40:10.604 LabApp] Saving file at /UNet.py
+[W 17:53:24.534 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 17:53:26.138 LabApp] Kernel started: fab661e5-2ac8-4616-99d9-b05c2f065766
+[I 17:53:34.143 LabApp] Adapting from protocol version 5.1 (kernel fab661e5-2ac8-4616-99d9-b05c2f065766) to 5.3 (client).
+[I 17:53:34.154 LabApp] Adapting from protocol version 5.1 (kernel fab661e5-2ac8-4616-99d9-b05c2f065766) to 5.3 (client).
+[I 17:53:34.169 LabApp] Adapting from protocol version 5.1 (kernel fab661e5-2ac8-4616-99d9-b05c2f065766) to 5.3 (client).
+[I 17:55:25.228 LabApp] Saving file at /test_models_leo.ipynb
+[W 17:55:25.229 LabApp] Notebook test_models_leo.ipynb is not trusted
+2019-12-08 17:58:49.085938: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-08 17:58:49.108473: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 17:59:25.945 LabApp] Saving file at /test_models_leo.ipynb
+[W 17:59:25.956 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 18:36:58.953 LabApp] Starting buffering for fab661e5-2ac8-4616-99d9-b05c2f065766:bb8f8acd-fb0a-4515-935c-010da382fdbb
+[I 18:49:23.953 LabApp] The port 8888 is already in use, trying another port.
+[I 18:49:23.953 LabApp] The port 8889 is already in use, trying another port.
+[I 18:49:24.063 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 18:49:24.063 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 18:49:24.065 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj/project2/CLELIE
+[I 18:49:24.065 LabApp] The Jupyter Notebook is running at:
+[I 18:49:24.065 LabApp] http://localhost:8890/?token=dbad295fe893ecbb01fbc513b8e150cb42974b1239b68953
+[I 18:49:24.065 LabApp]  or http://127.0.0.1:8890/?token=dbad295fe893ecbb01fbc513b8e150cb42974b1239b68953
+[I 18:49:24.065 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:49:24.303 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-5158-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=dbad295fe893ecbb01fbc513b8e150cb42974b1239b68953
+     or http://127.0.0.1:8890/?token=dbad295fe893ecbb01fbc513b8e150cb42974b1239b68953
+[W 18:49:27.536 LabApp] Could not determine jupyterlab build status without nodejs
+[W 18:49:30.557 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 18:49:31.391 LabApp] Kernel started: 2cdf2d8b-54d8-4326-ade9-33bb282b9b8b
+[I 18:49:32.511 LabApp] Adapting from protocol version 5.1 (kernel 2cdf2d8b-54d8-4326-ade9-33bb282b9b8b) to 5.3 (client).
+[I 18:49:32.537 LabApp] Adapting from protocol version 5.1 (kernel 2cdf2d8b-54d8-4326-ade9-33bb282b9b8b) to 5.3 (client).
+2019-12-08 18:49:46.729233: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-08 18:49:46.731359: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 18:51:31.645 LabApp] Saving file at /test_models_leo.ipynb
+[W 18:51:31.724 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 18:55:32.671 LabApp] Saving file at /test_models_leo.ipynb
+[W 18:55:32.671 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 18:57:32.827 LabApp] Saving file at /test_models_leo.ipynb
+[W 18:57:32.867 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 18:57:54.637 LabApp] Saving file at /UNet.py
+[I 18:58:59.516 LabApp] Saving file at /UNet.py
+[I 18:59:32.976 LabApp] Saving file at /test_models_leo.ipynb
+[W 18:59:32.976 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 19:00:27.905 LabApp] Saving file at /UNet.py
+[I 19:00:33.511 LabApp] Saving file at /UNet.py
+[I 19:01:33.070 LabApp] Saving file at /test_models_leo.ipynb
+[W 19:01:33.070 LabApp] Notebook test_models_leo.ipynb is not trusted
+[W 19:04:54.969 LabApp] Notebook test_models_leo.ipynb is not trusted
+[I 19:04:55.905 LabApp] Adapting from protocol version 5.1 (kernel 2cdf2d8b-54d8-4326-ade9-33bb282b9b8b) to 5.3 (client).
+[W 19:09:53.445 LabApp] WebSocket ping timeout after 114689 ms.
+[W 19:10:06.334 LabApp] zmq message arrived on closed channel
+[W 19:10:06.466 LabApp] zmq message arrived on closed channel
+[W 19:10:06.468 LabApp] zmq message arrived on closed channel
+[W 19:10:06.470 LabApp] zmq message arrived on closed channel
+[W 19:10:06.471 LabApp] zmq message arrived on closed channel
+[W 19:10:06.472 LabApp] zmq message arrived on closed channel
+[W 19:10:06.473 LabApp] zmq message arrived on closed channel
+[W 19:10:06.475 LabApp] zmq message arrived on closed channel
+[W 19:10:06.476 LabApp] zmq message arrived on closed channel
+[W 19:10:06.477 LabApp] zmq message arrived on closed channel
+[W 19:10:06.479 LabApp] zmq message arrived on closed channel
+[W 19:10:06.480 LabApp] zmq message arrived on closed channel
+[W 19:10:06.537 LabApp] zmq message arrived on closed channel
+[W 19:10:06.538 LabApp] zmq message arrived on closed channel
+[W 19:10:06.539 LabApp] zmq message arrived on closed channel
+[W 19:10:06.541 LabApp] zmq message arrived on closed channel
