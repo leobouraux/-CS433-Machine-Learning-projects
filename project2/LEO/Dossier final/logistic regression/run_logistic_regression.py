@@ -15,12 +15,6 @@ groudtruth_dir = "training/groundtruth/"
 imgs    = load_images(image_dir, nb_images)
 gt_imgs = load_images(groundtruth_dir, nb_images)
 
-# --- Preprocess the images
-imgs_med = median(imgs,3,n)
-img_pre = np.array([preprocess_image_rgb(imgs_med[i]) for i in range(n)])
-
-img_cluster = np.array([kmean_compression(imgs_med[i], img_pre[i], k_cluster, max_iter_cluster, threshold_cluster) for i in range(n)])
-
 # --- Load the logistic regression model
 model = LogisticModel()
 
