@@ -9,7 +9,6 @@ from keras.preprocessing.image import img_to_array
 
 
 def save_model(model, save_path, output_filename):
-    save_path+='/'
     if not os.path.exists(save_path):
         os.mkdir(save_path)
     model_json = model.to_json()

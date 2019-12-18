@@ -74,6 +74,7 @@ Contains functions to preprocess the data properly:
 * **`sorted_aphanumeric`**: 
 * **`data_load`**: loads the png images from a specified directory and returns them as a numpy array.
 * **`dataGenerator`**: creates a generator of training images and groundtruthes.
+* **`dataset_augmentation`**: copies the entire dataset in a new folder and creates a rotated copy (by 45°) for each image in the dataset.
 * **`create_validation_train_directory`**: 
 
 #### `data_postprocess.py`:
@@ -87,6 +88,7 @@ Contains functions to postprocess the data properly:
 * **`data_load_for_prediction`**: loads the groundtruth images that have been predicted. To be used to average the predictions.
 * **`average_image`**: averages a bunch of predicted groundtruthes.
 * **`color_patch`**:
+* **`color_patch_full`**:
 * **`img_crop`**: crops an image.
 * **`patched_imgs_and_vs`**:
 * **`create_csv_submission`**: creates a csv file for submission on AI-Crowd.
@@ -102,7 +104,7 @@ Contains functions that are used to create the U-Net model:
 * **`unet512`**: builds a U-Net model that is tu be used with 512x512 images.
 
 #### `fit_model.py`:
-Contains a function **`fit_unet`** that fit a U-Net model.
+Contains a function **`fit_unet`** that fits a U-Net model.
 
 #### `logistic_regression.py`:
 ???

@@ -1,0 +1,128 @@
+[I 17:10:58.159 LabApp] The port 8888 is already in use, trying another port.
+[I 17:10:58.160 LabApp] The port 8889 is already in use, trying another port.
+[I 17:10:58.160 LabApp] The port 8890 is already in use, trying another port.
+[I 17:10:58.276 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 17:10:58.276 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 17:10:58.285 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj
+[I 17:10:58.285 LabApp] The Jupyter Notebook is running at:
+[I 17:10:58.285 LabApp] http://localhost:8891/?token=92134c6ee4d0aaba215b23d2816634d6c6b2f12424bfbcab
+[I 17:10:58.286 LabApp]  or http://127.0.0.1:8891/?token=92134c6ee4d0aaba215b23d2816634d6c6b2f12424bfbcab
+[I 17:10:58.286 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:10:58.454 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-14358-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8891/?token=92134c6ee4d0aaba215b23d2816634d6c6b2f12424bfbcab
+     or http://127.0.0.1:8891/?token=92134c6ee4d0aaba215b23d2816634d6c6b2f12424bfbcab
+[W 17:11:03.054 LabApp] Could not determine jupyterlab build status without nodejs
+[W 17:11:05.356 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE?1575735065311 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE
+[W 17:11:05.356 LabApp] No such file or directory: ML_proj/project2/CLELIE
+[W 17:11:05.356 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE?1575735065311 (127.0.0.1) 1.87ms referer=http://localhost:8891/lab
+[W 17:11:05.364 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/test_models.ipynb?content=0&1575735065313 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/test_models.ipynb
+[W 17:11:05.364 LabApp] No such file or directory: ML_proj/project2/CLELIE/test_models.ipynb
+[W 17:11:05.365 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/test_models.ipynb?content=0&1575735065313 (127.0.0.1) 7.52ms referer=http://localhost:8891/lab
+[W 17:11:05.365 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/constant_values.py?content=0&1575735065315 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/constant_values.py
+[W 17:11:05.365 LabApp] No such file or directory: ML_proj/project2/CLELIE/constant_values.py
+[W 17:11:05.366 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/constant_values.py?content=0&1575735065315 (127.0.0.1) 7.32ms referer=http://localhost:8891/lab
+[W 17:11:05.366 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/img_preprocessing.py?content=0&1575735065316 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/img_preprocessing.py
+[W 17:11:05.366 LabApp] No such file or directory: ML_proj/project2/CLELIE/img_preprocessing.py
+[W 17:11:05.367 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/img_preprocessing.py?content=0&1575735065316 (127.0.0.1) 7.43ms referer=http://localhost:8891/lab
+[W 17:11:05.367 LabApp] 404 GET /api/contents/ML_proj/project2/im_processing.py?content=0&1575735065317 (127.0.0.1): No such file or directory: ML_proj/project2/im_processing.py
+[W 17:11:05.367 LabApp] No such file or directory: ML_proj/project2/im_processing.py
+[W 17:11:05.368 LabApp] 404 GET /api/contents/ML_proj/project2/im_processing.py?content=0&1575735065317 (127.0.0.1) 6.87ms referer=http://localhost:8891/lab
+[W 17:11:05.368 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/helpers.py?content=0&1575735065318 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/helpers.py
+[W 17:11:05.369 LabApp] No such file or directory: ML_proj/project2/CLELIE/helpers.py
+[W 17:11:05.369 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/helpers.py?content=0&1575735065318 (127.0.0.1) 6.27ms referer=http://localhost:8891/lab
+[W 17:11:05.373 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/LIDAR_model.py?content=0&1575735065319 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/LIDAR_model.py
+[W 17:11:05.373 LabApp] No such file or directory: ML_proj/project2/CLELIE/LIDAR_model.py
+[W 17:11:05.374 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/LIDAR_model.py?content=0&1575735065319 (127.0.0.1) 2.87ms referer=http://localhost:8891/lab
+[W 17:11:05.379 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/predictions.py?content=0&1575735065320 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/predictions.py
+[W 17:11:05.380 LabApp] No such file or directory: ML_proj/project2/CLELIE/predictions.py
+[W 17:11:05.380 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/predictions.py?content=0&1575735065320 (127.0.0.1) 5.26ms referer=http://localhost:8891/lab
+[W 17:11:05.381 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/im_postprocess.py?content=0&1575735065321 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/im_postprocess.py
+[W 17:11:05.381 LabApp] No such file or directory: ML_proj/project2/CLELIE/im_postprocess.py
+[W 17:11:05.382 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/im_postprocess.py?content=0&1575735065321 (127.0.0.1) 5.05ms referer=http://localhost:8891/lab
+[W 17:13:04.746 LabApp] Notebook project2/CLELIE/test_models_leo.ipynb is not trusted
+[I 17:13:05.479 LabApp] Kernel started: 00f723c1-a484-4b0e-ba83-3151c448bdfa
+[I 17:13:06.573 LabApp] Adapting from protocol version 5.1 (kernel 00f723c1-a484-4b0e-ba83-3151c448bdfa) to 5.3 (client).
+[I 17:13:06.586 LabApp] Adapting from protocol version 5.1 (kernel 00f723c1-a484-4b0e-ba83-3151c448bdfa) to 5.3 (client).
+[I 17:15:06.049 LabApp] Saving file at /project2/CLELIE/test_models_leo.ipynb
+[W 17:15:06.050 LabApp] Notebook project2/CLELIE/test_models_leo.ipynb is not trusted
+[I 17:21:21.363 LabApp] Saving file at /project2/CLELIE/predictions.py
+[I 21:58:02.732 LabApp] Starting buffering for 00f723c1-a484-4b0e-ba83-3151c448bdfa:97b743fe-82d0-42e5-88f3-a1317c3e14ad
+[I 10:24:53.161 LabApp] The port 8888 is already in use, trying another port.
+[I 10:24:53.172 LabApp] The port 8889 is already in use, trying another port.
+[I 10:24:53.172 LabApp] The port 8890 is already in use, trying another port.
+[I 10:24:53.172 LabApp] The port 8891 is already in use, trying another port.
+[I 10:24:53.335 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 10:24:53.335 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 10:24:53.342 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj
+[I 10:24:53.343 LabApp] The Jupyter Notebook is running at:
+[I 10:24:53.343 LabApp] http://localhost:8892/?token=47dc0c4c88c4d7d0290123f14aea7c11ea43286c66f99baa
+[I 10:24:53.343 LabApp]  or http://127.0.0.1:8892/?token=47dc0c4c88c4d7d0290123f14aea7c11ea43286c66f99baa
+[I 10:24:53.343 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 10:24:53.506 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-21332-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8892/?token=47dc0c4c88c4d7d0290123f14aea7c11ea43286c66f99baa
+     or http://127.0.0.1:8892/?token=47dc0c4c88c4d7d0290123f14aea7c11ea43286c66f99baa
+[W 10:24:56.976 LabApp] Could not determine jupyterlab build status without nodejs
+[W 10:25:00.117 LabApp] Notebook project2/CLELIE/test_models_leo.ipynb is not trusted
+[I 10:25:00.824 LabApp] Kernel started: 2943d42e-0196-434a-834e-6858925bb105
+[I 10:25:02.155 LabApp] Adapting from protocol version 5.1 (kernel 2943d42e-0196-434a-834e-6858925bb105) to 5.3 (client).
+[I 10:25:02.168 LabApp] Adapting from protocol version 5.1 (kernel 2943d42e-0196-434a-834e-6858925bb105) to 5.3 (client).
+[W 10:25:46.326 LabApp] Notebook project2/CLELIE/test_models_leo.ipynb is not trusted
+[I 10:25:46.769 LabApp] Adapting from protocol version 5.1 (kernel 2943d42e-0196-434a-834e-6858925bb105) to 5.3 (client).
+[I 10:27:46.702 LabApp] Saving file at /project2/CLELIE/test_models_leo.ipynb
+2019-12-08 10:28:35.616065: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-08 10:28:35.617900: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 10:29:47.776 LabApp] Saving file at /project2/CLELIE/test_models_leo.ipynb
+[I 10:31:48.025 LabApp] Saving file at /project2/CLELIE/test_models_leo.ipynb
+[I 10:33:48.327 LabApp] Saving file at /project2/CLELIE/test_models_leo.ipynb
+[I 12:29:19.830 LabApp] The port 8888 is already in use, trying another port.
+[I 12:29:20.113 LabApp] JupyterLab extension loaded from /home/clelie/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 12:29:20.113 LabApp] JupyterLab application directory is /home/clelie/anaconda3/share/jupyter/lab
+[I 12:29:20.119 LabApp] Serving notebooks from local directory: /home/clelie/Bureau/EPFL/test_ml/ML_proj
+[I 12:29:20.119 LabApp] The Jupyter Notebook is running at:
+[I 12:29:20.119 LabApp] http://localhost:8889/?token=12540c6aafb1cd443ed2567246e70e33c0a9c76c0db66d1d
+[I 12:29:20.120 LabApp]  or http://127.0.0.1:8889/?token=12540c6aafb1cd443ed2567246e70e33c0a9c76c0db66d1d
+[I 12:29:20.120 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:29:20.552 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/clelie/.local/share/jupyter/runtime/nbserver-4210-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=12540c6aafb1cd443ed2567246e70e33c0a9c76c0db66d1d
+     or http://127.0.0.1:8889/?token=12540c6aafb1cd443ed2567246e70e33c0a9c76c0db66d1d
+[W 12:29:32.764 LabApp] Could not determine jupyterlab build status without nodejs
+[W 12:29:36.884 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE?1575804576863 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE
+[W 12:29:36.884 LabApp] No such file or directory: ML_proj/project2/CLELIE
+[W 12:29:36.884 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE?1575804576863 (127.0.0.1) 1.11ms referer=http://localhost:8889/lab
+[W 12:29:36.887 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/test_models_leo.ipynb?content=0&1575804576866 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/test_models_leo.ipynb
+[W 12:29:36.888 LabApp] No such file or directory: ML_proj/project2/CLELIE/test_models_leo.ipynb
+[W 12:29:36.888 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/test_models_leo.ipynb?content=0&1575804576866 (127.0.0.1) 3.31ms referer=http://localhost:8889/lab
+[W 12:29:36.889 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/img_preprocessing.py?content=0&1575804576868 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/img_preprocessing.py
+[W 12:29:36.889 LabApp] No such file or directory: ML_proj/project2/CLELIE/img_preprocessing.py
+[W 12:29:36.889 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/img_preprocessing.py?content=0&1575804576868 (127.0.0.1) 3.90ms referer=http://localhost:8889/lab
+[W 12:29:36.890 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/predictions.py?content=0&1575804576870 (127.0.0.1): No such file or directory: ML_proj/project2/CLELIE/predictions.py
+[W 12:29:36.890 LabApp] No such file or directory: ML_proj/project2/CLELIE/predictions.py
+[W 12:29:36.890 LabApp] 404 GET /api/contents/ML_proj/project2/CLELIE/predictions.py?content=0&1575804576870 (127.0.0.1) 3.76ms referer=http://localhost:8889/lab
+[I 12:30:59.274 LabApp] Creating new file in /project2/CLELIE
+[I 12:32:59.825 LabApp] Saving file at /project2/CLELIE/vgg_like.py
+[I 12:34:59.955 LabApp] Saving file at /project2/CLELIE/vgg_like.py
+[I 12:35:07.580 LabApp] Saving file at /project2/CLELIE/vgg_like.py
+[I 12:37:05.997 LabApp] Kernel started: 32197db3-b7fa-4558-a5d8-741543e73456
+[I 12:37:14.675 LabApp] Adapting from protocol version 5.1 (kernel 32197db3-b7fa-4558-a5d8-741543e73456) to 5.3 (client).
+[I 12:37:14.685 LabApp] Adapting from protocol version 5.1 (kernel 32197db3-b7fa-4558-a5d8-741543e73456) to 5.3 (client).
+[I 12:37:14.703 LabApp] Adapting from protocol version 5.1 (kernel 32197db3-b7fa-4558-a5d8-741543e73456) to 5.3 (client).
+[I 12:45:41.579 LabApp] Saving file at /project2/CLELIE/img_preprocessing.py
+[I 12:47:05.358 LabApp] Saving file at /project2/CLELIE/test_models_leo.ipynb
+[I 12:47:31.254 LabApp] Saving file at /project2/CLELIE/img_preprocessing.py
+[I 12:59:09.483 LabApp] Saving file at /project2/CLELIE/vgg_like.py
+[I 13:03:03.078 LabApp] Saving file at /project2/CLELIE/vgg_like.py
+[I 13:06:15.602 LabApp] Starting buffering for 32197db3-b7fa-4558-a5d8-741543e73456:d29da8b2-333c-4dbd-83ec-a693355d14d7
+2019-12-08 13:06:38.043844: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2019-12-08 13:06:38.045741: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.

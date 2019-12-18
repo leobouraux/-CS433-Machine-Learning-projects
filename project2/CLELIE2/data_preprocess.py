@@ -68,7 +68,31 @@ def dataGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict, t
             mask[mask > 0.5] = 1
             mask[mask <= 0.5] = 0
         yield (img,mask)
-        
+
+def dataset_augmentation(directory_from, directory_to): 
+    if not os.path.exists(directory_to):
+        os.mkdir(directory_to)
+    datagen = ImageDataGenerator()
+    filenames = os.listdir(directory_from)
+    #create 24 rotated images for one image
+    angle = 45
+    zoom = 0.75
+    imgs = []
+    
+    for i, fileNb in enumerate(filenames):
+        if fileNb != ".DS_Store":
+            full_name = directory_from+fileNb
+            img=mpimg.imread(full_name)
+            io.imsave(directory_to+fileNb, img)
+            img_asarray = img_to_array(img)
+
+            out = datagen.apply_transform(x=img_asarray, transform_parameters={'theta':angle, 'zx':zoom, 'zy':zoom})
+            j = 101+i
+            fileNb2 = "satImage_%03d"%j + ".png"
+            io.imsave(directory_to+fileNb2, out)
+            sys.stdout.write("\rImage {}/{} is being loaded".format(i+1,len(filenames)))
+            sys.stdout.flush()
+
 def create_validation_train_directory(path, dir_images, dir_labels, i, seed):
     # 0<=i<5 
     origin_dirs = [dir_images, dir_labels]
