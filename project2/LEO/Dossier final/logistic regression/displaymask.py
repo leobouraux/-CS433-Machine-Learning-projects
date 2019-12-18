@@ -14,23 +14,6 @@ import cv2
 from cross_validation import *
 from logistic_regression import *
 
-def predictions(model, Y, X, k_fold, k, patch_size):
-    seed = 1
-    k_indices = build_k_indices(Y, k_fold, seed)
-    non_k_indices = k_indices[np.arange(k_indices.shape[0]) != k].ravel()
-    tx_tr = X[non_k_indices]
-    y_tr = Y[non_k_indices]
-    tx_te = X[k_indices[k]]
-    y_te = Y[k_indices[k]]
-    
-    model.initialize_model() # Reset model
-    model.train(y_tr, tx_tr,patch_size)
-    
-    # Run model
-    Z = model.logisticReg(tx_te, patch_size)
-    return Z , tx_te
-
-
 def img_float_to_uint8(img):
     rimg = img - np.min(img)
     rimg = (rimg / np.max(rimg) * 255).round().astype(np.uint8)
