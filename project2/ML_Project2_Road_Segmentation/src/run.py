@@ -8,11 +8,6 @@ from fit_model import *
 import os
 import sys
 
-DATA_PATH       = root_path+"data/"
-DATA_TEST_PATH  = root_path+"data/test/"
-MODEL_PATH      = root_path+"models/"
-PRED_PATH       = DATA_PATH+"predictions/"
-
 # --- Dataset augmentation
 dataset_augmentation(root_path+"data/train/images/", root_path+"data/train/img_aug")
 dataset_augmentation(root_path+"data/train/groundtruth/", root_path+"data/train/gts_aug")
