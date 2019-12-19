@@ -105,7 +105,7 @@ def create_validation_train_directory(path, dir_images, dir_labels, i, seed):
         index = int(len(permut)*0.2)
         test_ind = permut[i*index:(i+1)*index]
         test_filenames = filenames[test_ind]
-        trai_ind = np.delete(np.copy(permut), test_ind , None)
+        trai_ind = np.setdiff1d(permut,test_ind)
         trai_filenames = filenames[trai_ind]
         new = [name+'_te', name+'_tr']
         for n in new:  

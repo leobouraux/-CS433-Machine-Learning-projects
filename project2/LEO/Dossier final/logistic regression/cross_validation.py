@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from helpers import *
+from logistic_reg_preprocess import *
 
 def build_k_indices(y, k_fold, seed):
     """

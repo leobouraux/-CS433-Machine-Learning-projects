@@ -107,15 +107,19 @@ Contains functions that are used to create the U-Net model:
 Contains a function **`fit_unet`** that fits a U-Net model.
 
 #### `logistic_regression.py`:
-???
+Contains functions that are used to create the Logistic Regression model:
+* **`initialize_model`** : initialize or reset the logistic model from scikit-learn.
+* **`extract_features_2d`** : extract the average color, the standard deviation and the variation from each image patch
+* **`polynomial_feature`** : generate a new feature matrix consisting of all polynomial combinations of the features with degree less than or equal to the specified degree.
+* **`logisticReg`** : generates predictions using the logistic regression model. 
 
 #### `constants.py`:
 Contains useful constant values that are used in other scripts.
 
 #### `cross_validation.py`:
 Contains useful functions to implement cross validation on the segmentation models:
-* **`build_k_indices`**: Creates the indices for the k folds
-* **`cross_validation_visualization`**: Visualize the result of the cross validation
+* **`build_k_indices`** : Creates the indices for the k folds
+* **`cross_validation_visualization`** : Visualize the result of the cross validation
 
 ## Jupyter Notebooks
 Two Jupyter Notebooks are also available on this GitHub. They were used to test the different models. 
