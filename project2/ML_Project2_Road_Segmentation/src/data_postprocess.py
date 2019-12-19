@@ -112,6 +112,13 @@ def average_image(IMGS_weighted_folders):
             means[j]+=img*weight
     return means/total
 
+def median_image(IMGS_weighted_folders):
+    images = []
+    for i in range(len(IMGS_weighted_folders)):
+        images.append(IMGS_weighted_folders[i][1])
+    #return np.median(np.asarray(images), axis=0)
+    return np.percentile(np.asarray(images), 70, axis=0)
+
 def color_patch(patch, thresh=0.25):
     m = np.mean(patch)
     if(m>thresh):
