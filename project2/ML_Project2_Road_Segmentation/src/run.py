@@ -5,12 +5,12 @@ from data_postprocess import *
 from unet import *
 from fit_model import *
 
-import os
-import sys
+import os,sys
+
 
 # --- Dataset augmentation
-dataset_augmentation(root_path+"data/train/images/", root_path+"data/train/img_aug")
-dataset_augmentation(root_path+"data/train/groundtruth/", root_path+"data/train/gts_aug")
+dataset_augmentation(root_path+"data/train/images/", root_path+"data/train/img_aug/")
+dataset_augmentation(root_path+"data/train/groundtruth/", root_path+"data/train/gts_aug/")
 
 
 # --- Creates a list to store the predictions 
@@ -22,13 +22,12 @@ rotation_angles = [5,90]
 for k in range(k_fold):
 
     # Create the k folds
-    create_validation_train_directory(DATA_PATH+'train/', 'images', 'groundtruth', 1, 1)
+    create_validation_train_directory(DATA_PATH+'train/', 'img_aug', 'gts_aug', 1, 1)
     
     for i in rotation_angles:
         # --- Train or load a pretrained model
-        if train_model:
-            MODEL_NAME = f'Model_k{k}_rot{i}'
-            model = fit_unet(i, MODEL_PATH, MODEL_NAME)
+        MODEL_NAME = f'Model_k{k}_rot{i}'
+        model = fit_unet(i, MODEL_PATH, MODEL_NAME)
 	
 	# Uncomment if you want to save your model for a further use
 	#save_model(model, MODEL_PATH, MODEL_NAME)
