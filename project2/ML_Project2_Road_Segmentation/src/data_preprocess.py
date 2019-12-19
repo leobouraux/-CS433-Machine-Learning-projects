@@ -6,6 +6,7 @@ from keras.models import *
 from keras.optimizers import *
 from keras.preprocessing.image import ImageDataGenerator, img_to_array
 from PIL import Image
+from skimage import io
 
 def sorted_aphanumeric(data):
     convert = lambda text: int(text) if text.isdigit() else text.lower()
