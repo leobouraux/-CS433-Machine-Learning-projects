@@ -7,6 +7,9 @@ from skimage import img_as_ubyte
 from keras.models import model_from_json
 from keras.preprocessing.image import img_to_array
 
+from data_preprocess import *
+from constants import *
+
 
 def save_model(model, save_path, output_filename):
     if not os.path.exists(save_path):
@@ -113,7 +116,7 @@ def average_image(IMGS_weighted_folders):
             means[j]+=img*weight
     return means/total
 
-def color_patch(patch, thresh=0.25):
+def color_patch(patch, thresh=0.2):
     m = np.mean(patch)
     if(m>thresh):
         return 1, np.ones(16*16).reshape(16,16)
